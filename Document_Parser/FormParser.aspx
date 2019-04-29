@@ -24,7 +24,7 @@
             <br />
         	<br />
 
-        	<asp:DropDownList ID="DocumentClassDDL" runat="server" TabIndex="0" style="margin-left: 60px;">
+        	<asp:DropDownList ID="DocumentClassDDL" runat="server" TabIndex="0" style="margin-left: 65px;">
 				<asp:ListItem Text="Unspecified" Value="unspecified"></asp:ListItem>
 				<asp:ListItem Text="ACORD 25" Value="acord25"></asp:ListItem>
 				<asp:ListItem Text="W9" Value="w9"></asp:ListItem>
@@ -35,7 +35,11 @@
 			<br />
 			<br />
 
-			<asp:Button ID="UploadButton" Text="Upload" runat="server" OnClick="UploadButton_Click" />
+            <div style="font-size: 12px;">Note: Parsing image files may take longer than PDFs.</div>
+			
+            <br />
+
+			<asp:Button ID="UploadButton" Text="Parse" runat="server" OnClick="UploadButton_Click" />
 
 			<br />
 			<br />
