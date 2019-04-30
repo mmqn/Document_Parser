@@ -163,16 +163,16 @@ namespace Gradware_OCR
                         var InsuredArea = new Rectangle(60, 670, 1100, 240); // (x, y, width, height)
                         var Insured = Ocr.ReadPdf(FileLocation, InsuredArea).ToString();
 
-                        var ContactNameArea = new Rectangle(60, 670, 1100, 240); // (x, y, width, height)
+                        var ContactNameArea = new Rectangle(1276, 440, 980, 50); // (x, y, width, height)
                         var ContactName = Ocr.ReadPdf(FileLocation, ContactNameArea).ToString();
 
-                        var PhoneArea = new Rectangle(60, 670, 1100, 240); // (x, y, width, height)
+                        var PhoneArea = new Rectangle(1310, 500, 480, 50); // (x, y, width, height)
                         var Phone = Ocr.ReadPdf(FileLocation, PhoneArea).ToString();
 
-                        var FaxArea = new Rectangle(60, 670, 1100, 240); // (x, y, width, height)
+                        var FaxArea = new Rectangle(1930, 500, 280, 50); // (x, y, width, height)
                         var Fax = Ocr.ReadPdf(FileLocation, FaxArea).ToString();
 
-                        var EmailArea = new Rectangle(60, 670, 1100, 240); // (x, y, width, height)
+                        var EmailArea = new Rectangle(1276, 549, 925, 50); // (x, y, width, height)
                         var Email = Ocr.ReadPdf(FileLocation, EmailArea).ToString();
 
                         // add to list and serialize it into JSON
