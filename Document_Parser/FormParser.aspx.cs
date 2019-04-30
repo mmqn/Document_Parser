@@ -15,14 +15,32 @@ namespace Gradware_OCR
 	{
 		internal class UnspecifiedDoc
 		{
-			public string Text { get; set; }
-			public double Confidence { get; set; }
+            
+            public string Text { get; set; }
+            public double Confidence { get; set; }
 		}
 
         internal class AcordDoc
         {
             public string Date { get; set; }
-            public double DateConfidence { get; set; }
+            public string Producer { get; set; }
+            public string Insured { get; set; }
+            public string ContactName { get; set; }
+            public string Phone { get; set; }
+            public string Fax { get; set; }
+            public string Email { get; set; }
+            public string Insurer_A { get; set; }
+            public string Insurer_A_NAIC { get; set; }
+            public string Insurer_B { get; set; }
+            public string Insurer_B_NAIC { get; set; }
+            public string Insurer_C { get; set; }
+            public string Insurer_C_NAIC { get; set; }
+            public string Insurer_D { get; set; }
+            public string Insurer_D_NAIC { get; set; }
+            public string Insurer_E { get; set; }
+            public string Insurer_E_NAIC { get; set; }
+            public string Insurer_F { get; set; }
+            public string Insurer_F_NAIC { get; set; }
         }
 
         protected void UploadButton_Click(object sender, EventArgs e)
@@ -136,18 +154,42 @@ namespace Gradware_OCR
                             Language = IronOcr.Languages.English.OcrLanguagePack
                         };
 
-                        // retrieves date
-                        var DateArea = new Rectangle(1915, 136, 360, 64); // (x, y, width, height)
-                        var Date = Ocr.ReadPdf(FileLocation, DateArea);
-                        string DateString = Date.ToString();
+                        var DateArea = new Rectangle(1910, 123, 290, 50); // (x, y, width, height)
+                        var Date = Ocr.ReadPdf(FileLocation, DateArea).ToString();
 
-                        // retrieves contact name
-                        var ContactNameArea = new Rectangle(1276, 450, 900, 50); // (x, y, width, height)
-                        var ContactName = Ocr.ReadPdf(FileLocation, ContactNameArea);
-                        string ContactNameString = ContactName.ToString();
+                        var ProducerArea = new Rectangle(60, 440, 1100, 240); // (x, y, width, height)
+                        var Producer = Ocr.ReadPdf(FileLocation, ProducerArea).ToString();
+
+                        var InsuredArea = new Rectangle(60, 670, 1100, 240); // (x, y, width, height)
+                        var Insured = Ocr.ReadPdf(FileLocation, InsuredArea).ToString();
+
+                        var ContactNameArea = new Rectangle(60, 670, 1100, 240); // (x, y, width, height)
+                        var ContactName = Ocr.ReadPdf(FileLocation, ContactNameArea).ToString();
+
+                        var PhoneArea = new Rectangle(60, 670, 1100, 240); // (x, y, width, height)
+                        var Phone = Ocr.ReadPdf(FileLocation, PhoneArea).ToString();
+
+                        var FaxArea = new Rectangle(60, 670, 1100, 240); // (x, y, width, height)
+                        var Fax = Ocr.ReadPdf(FileLocation, FaxArea).ToString();
+
+                        var EmailArea = new Rectangle(60, 670, 1100, 240); // (x, y, width, height)
+                        var Email = Ocr.ReadPdf(FileLocation, EmailArea).ToString();
+
+                        // add to list and serialize it into JSON
+                        OutputList.Add(new AcordDoc() {
+                            Date = Date,
+                            Producer = Producer,
+                            Insured = Insured,
+                            ContactName = ContactName,
+                            Phone = Phone,
+                            Fax = Fax,
+                            Email = Email
+                        });
+                        var serializer = new JavaScriptSerializer();
+                        var serializedOutputList = serializer.Serialize(OutputList);
 
                         // place JSON object in text area HTML element
-                        ResultTextArea.Text = ContactNameString;
+                        ResultTextArea.Text = serializedOutputList;
                     }
                     else if (FileType == ".png" || FileType == ".jpg" || FileType == ".jpeg")
                     {

@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" style="height: 100%">
+<html xmlns="http://www.w3.org/1999/xhtml" style="height: 100vh;">
 <head runat="server">
     <title>Form Parser</title>
 	<style type="text/css">
@@ -39,12 +39,27 @@
 			
             <br />
 
-			<asp:Button ID="UploadButton" Text="Parse" runat="server" OnClick="UploadButton_Click" />
+			<asp:Button ID="UploadButton" Text="Extract Values" runat="server" OnClick="UploadButton_Click" />
 
 			<br />
 			<br />
 
-			<asp:TextBox id="ResultTextArea" TextMode="multiline" runat="server" ReadOnly="True" style="width: 25vw; height: 70vh" />
+			<asp:TextBox id="ResultTextArea" TextMode="multiline" runat="server" ReadOnly="True" style="width: 25vw; height: 60vh" />
+
+			<br />
+			<br />
+
+            <button onclick="parseJson()">Parse JSON</button>
+
+            <script>
+                function parseJson() {
+                    event.preventDefault(); // prevents ASP.NET from refreshing
+                    let textAreaVal = document.getElementById('ResultTextArea').value;
+                    const obj = JSON.parse(textAreaVal)[0];
+                    const result = Object.keys(obj).map((key, i) => `${key}:\t${Object.values(obj)[i]}\n`).join('');
+                    document.getElementById('ResultTextArea').value = result;
+                }
+            </script>
         </div>
     </form>
 </body>
