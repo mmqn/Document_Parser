@@ -41,6 +41,20 @@ namespace Gradware_OCR
             public string Insurer_E_NAIC { get; set; }
             public string Insurer_F { get; set; }
             public string Insurer_F_NAIC { get; set; }
+            public string CertificateNumber { get; set; }
+            public string RevisionNumber { get; set; }
+            // insert left side of Commercial General Liability
+            public string CGLEachOccurence { get; set; }
+            public string CGLDamageToRentedPremises { get; set; }
+            public string CGLMedExp { get; set; }
+            public string CGLPersonalAndAdvInjury { get; set; }
+            public string CGLGeneralAggregate { get; set; }
+            public string CGLProductsCompOpAgg { get; set; }
+            // insert left side of Automobile Liability
+            public string ALCombinedSingleLimit { get; set; }
+            public string ALBodilyInjuryPerPerson { get; set; }
+            public string ALBodilyInjuryPerAccident { get; set; }
+            public string ALPropertyDamage { get; set; }
         }
 
         internal class W9Doc
@@ -57,7 +71,10 @@ namespace Gradware_OCR
 
             // CHANGE: sets location file upload is saved in; currently set to user's desktop
             string FileLocation = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), FileName);
-            FileUpload.PostedFile.SaveAs(FileLocation);
+            if (FileUpload.HasFile)
+            {
+                FileUpload.PostedFile.SaveAs(FileLocation);
+            }
 
 			// if doc classification unspecified (accepts any doc)
 			if (SelectedDocClass == "unspecified")
@@ -216,6 +233,42 @@ namespace Gradware_OCR
                         var Insurer_F_NAICArea = new Rectangle(2000, 850, 210, 50); // (x, y, width, height)
                         var Insurer_F_NAIC = Ocr.ReadPdf(FileLocation, Insurer_F_NAICArea).ToString();
 
+                        var CertificateNumberArea = new Rectangle(980, 900, 600, 50); // (x, y, width, height)
+                        var CertificateNumber = Ocr.ReadPdf(FileLocation, CertificateNumberArea).ToString();
+
+                        var RevisionNumberArea = new Rectangle(1900, 900, 500, 50); // (x, y, width, height)
+                        var RevisionNumber = Ocr.ReadPdf(FileLocation, RevisionNumberArea).ToString();
+
+                        var CGLEachOccurenceArea = new Rectangle(1930, 1119, 350, 50); // (x, y, width, height)
+                        var CGLEachOccurence = Ocr.ReadPdf(FileLocation, CGLEachOccurenceArea).ToString();
+
+                        var CGLDamageToRentedPremisesArea = new Rectangle(1930, 1165, 350, 50); // (x, y, width, height)
+                        var CGLDamageToRentedPremises = Ocr.ReadPdf(FileLocation, CGLDamageToRentedPremisesArea).ToString();
+
+                        var CGLMedExpArea = new Rectangle(1930, 1205, 350, 50); // (x, y, width, height)
+                        var CGLMedExp = Ocr.ReadPdf(FileLocation, CGLMedExpArea).ToString();
+
+                        var CGLPersonalAndAdvInjuryArea = new Rectangle(1930, 1250, 350, 50); // (x, y, width, height)
+                        var CGLPersonalAndAdvInjury = Ocr.ReadPdf(FileLocation, CGLPersonalAndAdvInjuryArea).ToString();
+
+                        var CGLGeneralAggregateArea = new Rectangle(1930, 1295, 350, 50); // (x, y, width, height)
+                        var CGLGeneralAggregate = Ocr.ReadPdf(FileLocation, CGLGeneralAggregateArea).ToString();
+
+                        var CGLProductsCompOpAggArea = new Rectangle(1930, 1340, 350, 50); // (x, y, width, height)
+                        var CGLProductsCompOpAgg = Ocr.ReadPdf(FileLocation, CGLProductsCompOpAggArea).ToString();
+
+                        var ALCombinedSingleLimitArea = new Rectangle(1930, 1440, 350, 50); // (x, y, width, height)
+                        var ALCombinedSingleLimit = Ocr.ReadPdf(FileLocation, ALCombinedSingleLimitArea).ToString();
+
+                        var ALBodilyInjuryPerPersonArea = new Rectangle(1930, 1485, 350, 50); // (x, y, width, height)
+                        var ALBodilyInjuryPerPerson = Ocr.ReadPdf(FileLocation, ALBodilyInjuryPerPersonArea).ToString();
+
+                        var ALBodilyInjuryPerAccidentArea = new Rectangle(1930, 1540, 350, 50); // (x, y, width, height)
+                        var ALBodilyInjuryPerAccident = Ocr.ReadPdf(FileLocation, ALBodilyInjuryPerAccidentArea).ToString();
+
+                        var ALPropertyDamageArea = new Rectangle(1930, 1585, 350, 50); // (x, y, width, height)
+                        var ALPropertyDamage = Ocr.ReadPdf(FileLocation, ALPropertyDamageArea).ToString();
+
                         // add to list and serialize it into JSON
                         OutputList.Add(new AcordDoc() {
                             Date = Date,
@@ -234,7 +287,19 @@ namespace Gradware_OCR
                             Insurer_D = Insurer_D,
                             Insurer_D_NAIC = Insurer_D_NAIC,
                             Insurer_F = Insurer_F,
-                            Insurer_F_NAIC = Insurer_F_NAIC
+                            Insurer_F_NAIC = Insurer_F_NAIC,
+                            CertificateNumber = CertificateNumber,
+                            RevisionNumber = RevisionNumber,
+                            CGLEachOccurence = CGLEachOccurence,
+                            CGLDamageToRentedPremises = CGLDamageToRentedPremises,
+                            CGLMedExp = CGLMedExp,
+                            CGLPersonalAndAdvInjury = CGLPersonalAndAdvInjury,
+                            CGLGeneralAggregate = CGLGeneralAggregate,
+                            CGLProductsCompOpAgg = CGLProductsCompOpAgg,
+                            ALCombinedSingleLimit = ALCombinedSingleLimit,
+                            ALBodilyInjuryPerPerson = ALBodilyInjuryPerPerson,
+                            ALBodilyInjuryPerAccident = ALBodilyInjuryPerAccident,
+                            ALPropertyDamage = ALPropertyDamage
                         });
                         var serializer = new JavaScriptSerializer();
                         var serializedOutputList = serializer.Serialize(OutputList);
@@ -256,12 +321,17 @@ namespace Gradware_OCR
             // if doc classification is a W9 Form (handwritten)
             else if (SelectedDocClass == "w9")
 			{
-                ResultTextArea.Text = "Processing for W9 Forms is unavailable at the moment.";
-
 				if (FileUpload.HasFile)
 				{
-                    ResultTextArea.Text = "Processing for W9 Forms is unavailable at the moment.";
-				}
+                    if (FileType == ".pdf")
+                    {
+
+                    }
+                    else if (FileType == ".png" || FileType == ".jpg" || FileType == ".jpeg")
+                    {
+
+                    }
+                }
 				else
 				{
                     ResultTextArea.Text = "No file found.";
