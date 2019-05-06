@@ -52,9 +52,10 @@
             <button onclick="parseJson()">Parse JSON</button>
 
             <script>
+                const textAreaVal = document.getElementById('ResultTextArea').value;
+
                 function parseJson() {
                     event.preventDefault(); // prevents ASP.NET from refreshing
-                    let textAreaVal = document.getElementById('ResultTextArea').value;
                     const obj = JSON.parse(textAreaVal)[0];
                     const result = Object.keys(obj).map((key, i) => `${key}:\t${Object.values(obj)[i]}\n`).join('');
                     document.getElementById('ResultTextArea').value = result;
