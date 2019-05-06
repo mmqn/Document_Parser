@@ -90,7 +90,76 @@ namespace Gradware_OCR
 
         internal class W9Doc
         {
-            public string Text { get; set; }
+            public string Name { get; set; }
+            public double NameConfidence { get; set; }
+            public string BusinessName { get; set; }
+            public double BusinessNameConfidence { get; set; }
+            public string ClassificationIndividual { get; set; }
+            public double ClassificationIndividualConfidence { get; set; }
+            public string ClassificationCCorporation { get; set; }
+            public double ClassificationCCorporationConfidence { get; set; }
+            public string ClassificationSCorporation { get; set; }
+            public double ClassificationSCorporationConfidence { get; set; }
+            public string ClassificationPartnership { get; set; }
+            public double ClassificationPartnershipConfidence { get; set; }
+            public string ClassificationTrustEstate { get; set; }
+            public double ClassificationTrustEstateConfidence { get; set; }
+            public string ClassificationLimitedLiability { get; set; }
+            public double ClassificationLimitedLiabilityConfidence { get; set; }
+            public string ClassificationLimitedLiabilityCode { get; set; }
+            public double ClassificationLimitedLiabilityCodeConfidence { get; set; }
+            public string ClassificationOther { get; set; }
+            public double ClassificationOtherConfidence { get; set; }
+            public string ClassificationOtherText { get; set; }
+            public double ClassificationOtherTextConfidence { get; set; }
+            public string ExemptPayeeCode { get; set; }
+            public double ExemptPayeeCodeConfidence { get; set; }
+            public string ExemptionFromFATCACode { get; set; }
+            public double ExemptionFromFATCACodeConfidence { get; set; }
+            public string Address { get; set; }
+            public double AddressConfidence { get; set; }
+            public string CityStateZip { get; set; }
+            public double CityStateZipConfidence { get; set; }
+            public string RequesterNameAddress { get; set; }
+            public double RequesterNameAddressConfidence { get; set; }
+            public string AccountNumbers { get; set; }
+            public double AccountNumbersConfidence { get; set; }
+            public string SocialSecurity1 { get; set; }
+            public double SocialSecurity1Confidence { get; set; }
+            public string SocialSecurity2 { get; set; }
+            public double SocialSecurity2Confidence { get; set; }
+            public string SocialSecurity3 { get; set; }
+            public double SocialSecurity3Confidence { get; set; }
+            public string SocialSecurity4 { get; set; }
+            public double SocialSecurity4Confidence { get; set; }
+            public string SocialSecurity5 { get; set; }
+            public double SocialSecurity5Confidence { get; set; }
+            public string SocialSecurity6 { get; set; }
+            public double SocialSecurity6Confidence { get; set; }
+            public string SocialSecurity7 { get; set; }
+            public double SocialSecurity7Confidence { get; set; }
+            public string SocialSecurity8 { get; set; }
+            public double SocialSecurity8Confidence { get; set; }
+            public string SocialSecurity9 { get; set; }
+            public double SocialSecurity9Confidence { get; set; }
+            public string EmployerIdentification1 { get; set; }
+            public double EmployerIdentification1Confidence { get; set; }
+            public string EmployerIdentification2 { get; set; }
+            public double EmployerIdentification2Confidence { get; set; }
+            public string EmployerIdentification3 { get; set; }
+            public double EmployerIdentification3Confidence { get; set; }
+            public string EmployerIdentification4 { get; set; }
+            public double EmployerIdentification4Confidence { get; set; }
+            public string EmployerIdentification5 { get; set; }
+            public double EmployerIdentification5Confidence { get; set; }
+            public string EmployerIdentification6 { get; set; }
+            public double EmployerIdentification6Confidence { get; set; }
+            public string EmployerIdentification7 { get; set; }
+            public double EmployerIdentification7Confidence { get; set; }
+            public string EmployerIdentification8 { get; set; }
+            public double EmployerIdentification8Confidence { get; set; }
+            public string EmployerIdentification9 { get; set; }
+            public double EmployerIdentification9Confidence { get; set; }
         }
 
         protected void UploadButton_Click(object sender, EventArgs e)
@@ -355,7 +424,7 @@ namespace Gradware_OCR
                         var ALBodilyInjuryPerAccident_Area = new Rectangle(1930, 1540, 350, 50); // (x, y, width, height)
                         var ALBodilyInjuryPerAccident_Obj = Ocr.ReadPdf(FileLocation, ALBodilyInjuryPerAccident_Area);
                         var ALBodilyInjuryPerAccident = ALBodilyInjuryPerAccident_Obj.ToString();
-                        var ALBodilyInjuryPerAccident_Confidence = Math.Round(ALBodilyInjuryPerAccident_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var ALBodilyInjuryPerAccident_Confidence = 0; // Math.Round(ALBodilyInjuryPerAccident_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
                         var ALPropertyDamage_Area = new Rectangle(1930, 1585, 350, 50); // (x, y, width, height)
                         var ALPropertyDamage_Obj = Ocr.ReadPdf(FileLocation, ALPropertyDamage_Area);
@@ -451,11 +520,43 @@ namespace Gradware_OCR
 				{
                     if (FileType == ".pdf")
                     {
+                        // initializes list to be serialized into JSON
+                        var OutputList = new List<W9Doc>();
 
+                        // initializes IronOCR's AdvancedOcr object; AdvancedOcr allows for region cropping for PDFs
+                        var Ocr = new AdvancedOcr()
+                        {
+                            EnhanceResolution = true,
+                            EnhanceContrast = true,
+                            CleanBackgroundNoise = true,
+                            DetectWhiteTextOnDarkBackgrounds = true,
+                            RotateAndStraighten = true,
+                            ReadBarCodes = false,
+                            ColorDepth = 4,
+                            ColorSpace = AdvancedOcr.OcrColorSpace.Color,
+                            Strategy = IronOcr.AdvancedOcr.OcrStrategy.Advanced,
+                            InputImageType = AdvancedOcr.InputTypes.Document,
+                            Language = IronOcr.Languages.English.OcrLanguagePack
+                        };
+
+                        var Name_Area = new Rectangle(1910, 123, 290, 50); // (x, y, width, height)
+                        var Name_Obj = Ocr.ReadPdf(FileLocation, Name_Area);
+                        var Name = Name_Obj.ToString();
+                        var Name_Confidence = Math.Round(Name_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+
+                        // add to list and serialize it into JSON
+                        OutputList.Add(new W9Doc() {
+                            Name = Name
+                        });
+                        var serializer = new JavaScriptSerializer();
+                        var serializedOutputList = serializer.Serialize(OutputList);
+
+                        // place JSON object in text area HTML element
+                        ResultTextArea.Text = serializedOutputList;
                     }
                     else if (FileType == ".png" || FileType == ".jpg" || FileType == ".jpeg")
                     {
-
+                        // TODO: Image W-9 files
                     }
                 }
 				else
