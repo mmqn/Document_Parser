@@ -69,30 +69,30 @@ namespace Gradware_OCR
             public double CGLInsrLtr_Confidence { get; set; }
             public string CGLCheckbox { get; set; }
             public double CGLCheckbox_Confidence { get; set; }
-            public string CGLBothClaimsOccurCheckbox { get; set; }
-            public double CGLBothClaimsOccurCheckbox_Confidence { get; set; }
-            public string CGLClaimsMadeCheckbox { get; set; }
-            public double CGLClaimsMadeCheckbox_Confidence { get; set; }
-            public string CGLOccurCheckbox { get; set; }
-            public double CGLOccurCheckbox_Confidence { get; set; }
-            public string CGLOther1Checkbox { get; set; }
-            public double CGLOther1Checkbox_Confidence { get; set; }
-            public string CGLOther1Text { get; set; }
-            public double CGLOther1Text_Confidence { get; set; }
-            public string CGLOther2Checkbox { get; set; }
-            public double CGLOther2Checkbox_Confidence { get; set; }
-            public string CGLOther2Text { get; set; }
-            public double CGLOther2Text_Confidence { get; set; }
-            public string CGLLimitPolicyCheckbox { get; set; }
-            public double CGLLimitPolicyCheckbox_Confidence { get; set; }
-            public string CGLLimitProjectCheckbox { get; set; }
-            public double CGLLimitProjectCheckbox_Confidence { get; set; }
-            public string CGLLimitLocCheckbox { get; set; }
-            public double CGLLimitLocCheckbox_Confidence { get; set; }
-            public string CGLLimitOtherCheckbox { get; set; }
-            public double CGLLimitOtherCheckbox_Confidence { get; set; }
-            public string CGLLimitOtherText { get; set; }
-            public double CGLLimitOtherText_Confidence { get; set; }
+            //public string CGLBothClaimsOccurCheckbox { get; set; }
+            //public double CGLBothClaimsOccurCheckbox_Confidence { get; set; }
+            //public string CGLClaimsMadeCheckbox { get; set; }
+            //public double CGLClaimsMadeCheckbox_Confidence { get; set; }
+            //public string CGLOccurCheckbox { get; set; }
+            //public double CGLOccurCheckbox_Confidence { get; set; }
+            //public string CGLOther1Checkbox { get; set; }
+            //public double CGLOther1Checkbox_Confidence { get; set; }
+            //public string CGLOther1Text { get; set; }
+            //public double CGLOther1Text_Confidence { get; set; }
+            //public string CGLOther2Checkbox { get; set; }
+            //public double CGLOther2Checkbox_Confidence { get; set; }
+            //public string CGLOther2Text { get; set; }
+            //public double CGLOther2Text_Confidence { get; set; }
+            //public string CGLLimitPolicyCheckbox { get; set; }
+            //public double CGLLimitPolicyCheckbox_Confidence { get; set; }
+            //public string CGLLimitProjectCheckbox { get; set; }
+            //public double CGLLimitProjectCheckbox_Confidence { get; set; }
+            //public string CGLLimitLocCheckbox { get; set; }
+            //public double CGLLimitLocCheckbox_Confidence { get; set; }
+            //public string CGLLimitOtherCheckbox { get; set; }
+            //public double CGLLimitOtherCheckbox_Confidence { get; set; }
+            //public string CGLLimitOtherText { get; set; }
+            //public double CGLLimitOtherText_Confidence { get; set; }
             public string CGLAddlInsd { get; set; }
             public double CGLAddlInsd_Confidence { get; set; }
             public string CGLSubrWvd { get; set; }
@@ -116,28 +116,28 @@ namespace Gradware_OCR
             public string CGLProductsCompOpAgg { get; set; }
             public double CGLProductsCompOpAgg_Confidence { get; set; }
             // AL: Automobile Liability
-            public string ALInsrLtr { get; set; }
-            public double ALInsrLtr_Confidence { get; set; }
-            public string ALAnyAutoCheckbox { get; set; }
-            public double ALAnyAutoCheckbox_Confidence { get; set; }
-            public string ALAllOwnedAutosCheckbox { get; set; }
-            public double ALAllOwnedAutosCheckbox_Confidence { get; set; }
-            public string ALScheduledAutosCheckbox { get; set; }
-            public double ALScheduledAutosCheckbox_Confidence { get; set; }
-            public string ALHiredAutosCheckbox { get; set; }
-            public double ALHiredAutosCheckbox_Confidence { get; set; }
-            public string ALNonOwnedAutosCheckbox { get; set; }
-            public double ALNonOwnedAutosCheckbox_Confidence { get; set; }
-            public string ALAddlInsd { get; set; }
-            public double ALAddlInsd_Confidence { get; set; }
-            public string ALSubrWvd { get; set; }
-            public double ALSubrWvd_Confidence { get; set; }
-            public string ALPolicyNumber { get; set; }
-            public double ALPolicyNumber_Confidence { get; set; }
-            public string ALPolicyEff { get; set; }
-            public double ALPolicyEff_Confidence { get; set; }
-            public string ALPolicyExp { get; set; }
-            public double ALPolicyExp_Confidence { get; set; }
+            //public string ALInsrLtr { get; set; }
+            //public double ALInsrLtr_Confidence { get; set; }
+            //public string ALAnyAutoCheckbox { get; set; }
+            //public double ALAnyAutoCheckbox_Confidence { get; set; }
+            //public string ALAllOwnedAutosCheckbox { get; set; }
+            //public double ALAllOwnedAutosCheckbox_Confidence { get; set; }
+            //public string ALScheduledAutosCheckbox { get; set; }
+            //public double ALScheduledAutosCheckbox_Confidence { get; set; }
+            //public string ALHiredAutosCheckbox { get; set; }
+            //public double ALHiredAutosCheckbox_Confidence { get; set; }
+            //public string ALNonOwnedAutosCheckbox { get; set; }
+            //public double ALNonOwnedAutosCheckbox_Confidence { get; set; }
+            //public string ALAddlInsd { get; set; }
+            //public double ALAddlInsd_Confidence { get; set; }
+            //public string ALSubrWvd { get; set; }
+            //public double ALSubrWvd_Confidence { get; set; }
+            //public string ALPolicyNumber { get; set; }
+            //public double ALPolicyNumber_Confidence { get; set; }
+            //public string ALPolicyEff { get; set; }
+            //public double ALPolicyEff_Confidence { get; set; }
+            //public string ALPolicyExp { get; set; }
+            //public double ALPolicyExp_Confidence { get; set; }
             public string ALCombinedSingleLimit { get; set; }
             public double ALCombinedSingleLimit_Confidence { get; set; }
             public string ALBodilyInjuryPerPerson { get; set; }
@@ -147,42 +147,42 @@ namespace Gradware_OCR
             public string ALPropertyDamage { get; set; }
             public double ALPropertyDamage_Confidence { get; set; }
             // UEL: Umbrella or Excess Liability
-            public string UELInsrLtr { get; set; }
-            public double UELInsrLtr_Confidence { get; set; }
-            public string UELUmbrellaLiabCheckbox { get; set; }
-            public double UELUmbrellaLiabCheckbox_Confidence { get; set; }
-            public string UELExcessLiabCheckbox { get; set; }
-            public double UELExcessLiabCheckbox_Confidence { get; set; }
-            public string UELOccurCheckbox { get; set; }
-            public double UELOccurCheckbox_Confidence { get; set; }
-            public string UELClaimsMadeCheckbox { get; set; }
-            public double UELClaimsMadeCheckbox_Confidence { get; set; }
-            public string UELDeductibleCheckbox { get; set; }
-            public double UELDeductibleCheckbox_Confidence { get; set; }
-            public string UELRetentionCheckbox { get; set; }
-            public double UELRetentionCheckbox_Confidence { get; set; }
-            public string UELRetentionText { get; set; }
-            public double UELRetentionText_Confidence { get; set; }
-            public string UELAddlInsd { get; set; }
-            public double UELAddlInsd_Confidence { get; set; }
-            public string UELSubrWvd { get; set; }
-            public double UELSubrWvd_Confidence { get; set; }
-            public string UELPolicyNumber { get; set; }
-            public double UELPolicyNumber_Confidence { get; set; }
-            public string UELPolicyEff { get; set; }
-            public double UELPolicyEff_Confidence { get; set; }
-            public string UELPolicyExp { get; set; }
-            public double UELPolicyExp_Confidence { get; set; }
-            public string UELEachOccurence { get; set; }
-            public double UELEachOccurence_Confidence { get; set; }
-            public string UELAggregate { get; set; }
-            public double UELAggregate_Confidence { get; set; }
-            public string DescriptionOfOperations { get; set; }
-            public double DescriptionOfOperations_Confidence { get; set; }
-            public string CertificateHolder { get; set; }
-            public double CertificateHolder_Confidence { get; set; }
-            public string AuthorizedRepresentative { get; set; }
-            public double AuthorizedRepresentative_Confidence { get; set; }
+            //public string UELInsrLtr { get; set; }
+            //public double UELInsrLtr_Confidence { get; set; }
+            //public string UELUmbrellaLiabCheckbox { get; set; }
+            //public double UELUmbrellaLiabCheckbox_Confidence { get; set; }
+            //public string UELExcessLiabCheckbox { get; set; }
+            //public double UELExcessLiabCheckbox_Confidence { get; set; }
+            //public string UELOccurCheckbox { get; set; }
+            //public double UELOccurCheckbox_Confidence { get; set; }
+            //public string UELClaimsMadeCheckbox { get; set; }
+            //public double UELClaimsMadeCheckbox_Confidence { get; set; }
+            //public string UELDeductibleCheckbox { get; set; }
+            //public double UELDeductibleCheckbox_Confidence { get; set; }
+            //public string UELRetentionCheckbox { get; set; }
+            //public double UELRetentionCheckbox_Confidence { get; set; }
+            //public string UELRetentionText { get; set; }
+            //public double UELRetentionText_Confidence { get; set; }
+            //public string UELAddlInsd { get; set; }
+            //public double UELAddlInsd_Confidence { get; set; }
+            //public string UELSubrWvd { get; set; }
+            //public double UELSubrWvd_Confidence { get; set; }
+            //public string UELPolicyNumber { get; set; }
+            //public double UELPolicyNumber_Confidence { get; set; }
+            //public string UELPolicyEff { get; set; }
+            //public double UELPolicyEff_Confidence { get; set; }
+            //public string UELPolicyExp { get; set; }
+            //public double UELPolicyExp_Confidence { get; set; }
+            //public string UELEachOccurence { get; set; }
+            //public double UELEachOccurence_Confidence { get; set; }
+            //public string UELAggregate { get; set; }
+            //public double UELAggregate_Confidence { get; set; }
+            //public string DescriptionOfOperations { get; set; }
+            //public double DescriptionOfOperations_Confidence { get; set; }
+            //public string CertificateHolder { get; set; }
+            //public double CertificateHolder_Confidence { get; set; }
+            //public string AuthorizedRepresentative { get; set; }
+            //public double AuthorizedRepresentative_Confidence { get; set; }
         }
 
         internal class W9Doc
@@ -446,15 +446,15 @@ namespace Gradware_OCR
                         var RevisionNumber = RevisionNumber_Obj.ToString();
                         var RevisionNumber_Confidence = 0; // Math.Round(RevisionNumber_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var CGLInsrLtr_Area = new Rectangle(); // (x, y, width, height)
-                        //var CGLInsrLtr_Obj = Ocr.ReadPdf(FileLocation, CGLInsrLtr_Area);
-                        //var CGLInsrLtr = CGLInsrLtr_Obj.ToString();
-                        //var CGLInsrLtr_Confidence = Math.Round(CGLInsrLtr_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CGLInsrLtr_Area = new Rectangle(50, 1119, 100, 340); // (x, y, width, height)
+                        var CGLInsrLtr_Obj = Ocr.ReadPdf(FileLocation, CGLInsrLtr_Area);
+                        var CGLInsrLtr = CGLInsrLtr_Obj.ToString();
+                        var CGLInsrLtr_Confidence = 0; // Math.Round(CGLInsrLtr_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var CGLCheckbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var CGLCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLCheckbox_Area);
-                        //var CGLCheckbox = CGLCheckbox_Obj.ToString();
-                        //var CGLCheckbox_Confidence = Math.Round(CGLCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CGLCheckbox_Area = new Rectangle(145, 1119, 90, 70); // (x, y, width, height)
+                        var CGLCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLCheckbox_Area);
+                        var CGLCheckbox = CGLCheckbox_Obj.ToString();
+                        var CGLCheckbox_Confidence = 0; // Math.Round(CGLCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
                         //var CGLBothClaimsOccurCheckbox_Area = new Rectangle(); // (x, y, width, height)
                         //var CGLBothClaimsOccurCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLBothClaimsOccurCheckbox_Area);
@@ -516,30 +516,30 @@ namespace Gradware_OCR
                         //var CGLLimitOtherText = CGLLimitOtherText_Obj.ToString();
                         //var CGLLimitOtherText_Confidence = Math.Round(CGLLimitOtherText_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var CGLAddlInsd_Area = new Rectangle(); // (x, y, width, height)
-                        //var CGLAddlInsd_Obj = Ocr.ReadPdf(FileLocation, CGLAddlInsd_Area);
-                        //var CGLAddlInsd = CGLAddlInsd_Obj.ToString();
-                        //var CGLAddlInsd_Confidence = Math.Round(CGLAddlInsd_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CGLAddlInsd_Area = new Rectangle(595, 1119, 170, 340); // (x, y, width, height)
+                        var CGLAddlInsd_Obj = Ocr.ReadPdf(FileLocation, CGLAddlInsd_Area);
+                        var CGLAddlInsd = CGLAddlInsd_Obj.ToString();
+                        var CGLAddlInsd_Confidence = 0; // Math.Round(CGLAddlInsd_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var CGLSubrWvd_Area = new Rectangle(); // (x, y, width, height)
-                        //var CGLSubrWvd_Obj = Ocr.ReadPdf(FileLocation, CGLSubrWvd_Area);
-                        //var CGLSubrWvd = CGLSubrWvd_Obj.ToString();
-                        //var CGLSubrWvd_Confidence = Math.Round(CGLSubrWvd_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CGLSubrWvd_Area = new Rectangle(690, 1119, 170, 340); // (x, y, width, height)
+                        var CGLSubrWvd_Obj = Ocr.ReadPdf(FileLocation, CGLSubrWvd_Area);
+                        var CGLSubrWvd = CGLSubrWvd_Obj.ToString();
+                        var CGLSubrWvd_Confidence = 0; // Math.Round(CGLSubrWvd_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var CGLPolicyNumber_Area = new Rectangle(); // (x, y, width, height)
-                        //var CGLPolicyNumber_Obj = Ocr.ReadPdf(FileLocation, CGLPolicyNumber_Area);
-                        //var CGLPolicyNumber = CGLPolicyNumber_Obj.ToString();
-                        //var CGLPolicyNumber_Confidence = Math.Round(CGLPolicyNumber_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CGLPolicyNumber_Area = new Rectangle(805, 1119, 425, 340); // (x, y, width, height)
+                        var CGLPolicyNumber_Obj = Ocr.ReadPdf(FileLocation, CGLPolicyNumber_Area);
+                        var CGLPolicyNumber = CGLPolicyNumber_Obj.ToString();
+                        var CGLPolicyNumber_Confidence = Math.Round(CGLPolicyNumber_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var CGLPolicyEff_Area = new Rectangle(); // (x, y, width, height)
-                        //var CGLPolicyEff_Obj = Ocr.ReadPdf(FileLocation, CGLPolicyEff_Area);
-                        //var CGLPolicyEff = CGLPolicyEff_Obj.ToString();
-                        //var CGLPolicyEff_Confidence = Math.Round(CGLPolicyEff_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CGLPolicyEff_Area = new Rectangle(1255, 1119, 200, 340); // (x, y, width, height)
+                        var CGLPolicyEff_Obj = Ocr.ReadPdf(FileLocation, CGLPolicyEff_Area);
+                        var CGLPolicyEff = CGLPolicyEff_Obj.ToString();
+                        var CGLPolicyEff_Confidence = Math.Round(CGLPolicyEff_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var CGLPolicyExp_Area = new Rectangle(); // (x, y, width, height)
-                        //var CGLPolicyExp_Obj = Ocr.ReadPdf(FileLocation, CGLPolicyExp_Area);
-                        //var CGLPolicyExp = CGLPolicyExp_Obj.ToString();
-                        //var CGLPolicyExp_Confidence = Math.Round(CGLPolicyExp_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CGLPolicyExp_Area = new Rectangle(1410, 1119, 200, 340); // (x, y, width, height)
+                        var CGLPolicyExp_Obj = Ocr.ReadPdf(FileLocation, CGLPolicyExp_Area);
+                        var CGLPolicyExp = CGLPolicyExp_Obj.ToString();
+                        var CGLPolicyExp_Confidence = Math.Round(CGLPolicyExp_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
                         var CGLEachOccurence_Area = new Rectangle(1930, 1119, 350, 50); // (x, y, width, height)
                         var CGLEachOccurence_Obj = Ocr.ReadPdf(FileLocation, CGLEachOccurence_Area);
@@ -584,7 +584,7 @@ namespace Gradware_OCR
                         //var ALAllOwnedAutosCheckbox_Area = new Rectangle(); // (x, y, width, height)
                         //var ALAllOwnedAutosCheckbox_Obj = Ocr.ReadPdf(FileLocation, ALAllOwnedAutosCheckbox_Area);
                         //var ALAllOwnedAutosCheckbox = ALAllOwnedAutosCheckbox_Obj.ToString();
-                        //var ALAllOwnedAutosCheckbox_Confidence = Math.Round(ALAllOwnedAutosCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        //var ALAllOwnedAutosCheckbox_Confidence = 0; // Math.Round(ALAllOwnedAutosCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
                         //var ALScheduledAutosCheckbox_Area = new Rectangle(); // (x, y, width, height)
                         //var ALScheduledAutosCheckbox_Obj = Ocr.ReadPdf(FileLocation, ALScheduledAutosCheckbox_Area);
@@ -780,10 +780,10 @@ namespace Gradware_OCR
                             CertificateNumber_Confidence = CertificateNumber_Confidence,
                             RevisionNumber = RevisionNumber,
                             RevisionNumber_Confidence = RevisionNumber_Confidence,
-                            //CGLInsrLtr = CGLInsrLtr,
-                            //CGLInsrLtr_Confidence = CGLInsrLtr_Confidence,
-                            //CGLCheckbox = CGLCheckbox,
-                            //CGLCheckbox_Confidence = CGLCheckbox_Confidence,
+                            CGLInsrLtr = CGLInsrLtr,
+                            CGLInsrLtr_Confidence = CGLInsrLtr_Confidence,
+                            CGLCheckbox = CGLCheckbox,
+                            CGLCheckbox_Confidence = CGLCheckbox_Confidence,
                             //CGLBothClaimsOccurCheckbox = CGLBothClaimsOccurCheckbox,
                             //CGLBothClaimsOccurCheckbox_Confidence = CGLBothClaimsOccurCheckbox_Confidence,
                             //CGLClaimsMadeCheckbox = CGLClaimsMadeCheckbox,
@@ -808,16 +808,16 @@ namespace Gradware_OCR
                             //CGLLimitOtherCheckbox_Confidence = CGLLimitOtherCheckbox_Confidence,
                             //CGLLimitOtherText = CGLLimitOtherText,
                             //CGLLimitOtherText_Confidence = CGLLimitOtherText_Confidence,
-                            //CGLAddlInsd = CGLAddlInsd,
-                            //CGLAddlInsd_Confidence = CGLAddlInsd_Confidence,
-                            //CGLSubrWvd = CGLSubrWvd,
-                            //CGLSubrWvd_Confidence = CGLSubrWvd_Confidence,
-                            //CGLPolicyNumber = CGLPolicyNumber,
-                            //CGLPolicyNumber_Confidence = CGLPolicyNumber_Confidence,
-                            //CGLPolicyEff = CGLPolicyEff,
-                            //CGLPolicyEff_Confidence = CGLPolicyEff_Confidence,
-                            //CGLPolicyExp = CGLPolicyExp,
-                            //CGLPolicyExp_Confidence = CGLPolicyExp_Confidence,
+                            CGLAddlInsd = CGLAddlInsd,
+                            CGLAddlInsd_Confidence = CGLAddlInsd_Confidence,
+                            CGLSubrWvd = CGLSubrWvd,
+                            CGLSubrWvd_Confidence = CGLSubrWvd_Confidence,
+                            CGLPolicyNumber = CGLPolicyNumber,
+                            CGLPolicyNumber_Confidence = CGLPolicyNumber_Confidence,
+                            CGLPolicyEff = CGLPolicyEff,
+                            CGLPolicyEff_Confidence = CGLPolicyEff_Confidence,
+                            CGLPolicyExp = CGLPolicyExp,
+                            CGLPolicyExp_Confidence = CGLPolicyExp_Confidence,
                             CGLEachOccurence = CGLEachOccurence,
                             CGLEachOccurence_Confidence = CGLEachOccurence_Confidence,
                             CGLDamageToRentedPremises = CGLDamageToRentedPremises,
