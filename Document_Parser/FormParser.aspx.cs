@@ -65,38 +65,38 @@ namespace Gradware_OCR
             public string RevisionNumber { get; set; }
             public double RevisionNumber_Confidence { get; set; }
             // CGL: Commercial General Liability
-            public string CGLInsrLtr { get; set; }
-            public double CGLInsrLtr_Confidence { get; set; }
-            public string CGLCheckbox { get; set; }
+            //public string CGLInsrLtr { get; set; }
+            //public double CGLInsrLtr_Confidence { get; set; }
+            public bool CGLCheckbox { get; set; }
             public double CGLCheckbox_Confidence { get; set; }
-            //public string CGLBothClaimsOccurCheckbox { get; set; }
+            //public bool CGLBothClaimsOccurCheckbox { get; set; }
             //public double CGLBothClaimsOccurCheckbox_Confidence { get; set; }
-            //public string CGLClaimsMadeCheckbox { get; set; }
+            //public bool CGLClaimsMadeCheckbox { get; set; }
             //public double CGLClaimsMadeCheckbox_Confidence { get; set; }
-            //public string CGLOccurCheckbox { get; set; }
-            //public double CGLOccurCheckbox_Confidence { get; set; }
-            //public string CGLOther1Checkbox { get; set; }
-            //public double CGLOther1Checkbox_Confidence { get; set; }
-            //public string CGLOther1Text { get; set; }
-            //public double CGLOther1Text_Confidence { get; set; }
-            //public string CGLOther2Checkbox { get; set; }
-            //public double CGLOther2Checkbox_Confidence { get; set; }
-            //public string CGLOther2Text { get; set; }
-            //public double CGLOther2Text_Confidence { get; set; }
-            //public string CGLLimitPolicyCheckbox { get; set; }
-            //public double CGLLimitPolicyCheckbox_Confidence { get; set; }
-            //public string CGLLimitProjectCheckbox { get; set; }
-            //public double CGLLimitProjectCheckbox_Confidence { get; set; }
-            //public string CGLLimitLocCheckbox { get; set; }
+            public bool CGLOccurCheckbox { get; set; }
+            public double CGLOccurCheckbox_Confidence { get; set; }
+            public bool CGLOther1Checkbox { get; set; }
+            public double CGLOther1Checkbox_Confidence { get; set; }
+            public string CGLOther1Text { get; set; }
+            public double CGLOther1Text_Confidence { get; set; }
+            public bool CGLOther2Checkbox { get; set; }
+            public double CGLOther2Checkbox_Confidence { get; set; }
+            public string CGLOther2Text { get; set; }
+            public double CGLOther2Text_Confidence { get; set; }
+            public bool CGLLimitPolicyCheckbox { get; set; }
+            public double CGLLimitPolicyCheckbox_Confidence { get; set; }
+            public bool CGLLimitProjectCheckbox { get; set; }
+            public double CGLLimitProjectCheckbox_Confidence { get; set; }
+            //public bool CGLLimitLocCheckbox { get; set; }
             //public double CGLLimitLocCheckbox_Confidence { get; set; }
-            //public string CGLLimitOtherCheckbox { get; set; }
-            //public double CGLLimitOtherCheckbox_Confidence { get; set; }
-            //public string CGLLimitOtherText { get; set; }
-            //public double CGLLimitOtherText_Confidence { get; set; }
-            public string CGLAddlInsd { get; set; }
-            public double CGLAddlInsd_Confidence { get; set; }
-            public string CGLSubrWvd { get; set; }
-            public double CGLSubrWvd_Confidence { get; set; }
+            public bool CGLLimitOtherCheckbox { get; set; }
+            public double CGLLimitOtherCheckbox_Confidence { get; set; }
+            public string CGLLimitOtherText { get; set; }
+            public double CGLLimitOtherText_Confidence { get; set; }
+            //public bool CGLAddlInsd { get; set; }
+            //public double CGLAddlInsd_Confidence { get; set; }
+            //public bool CGLSubrWvd { get; set; }
+            //public double CGLSubrWvd_Confidence { get; set; }
             public string CGLPolicyNumber { get; set; }
             public double CGLPolicyNumber_Confidence { get; set; }
             public string CGLPolicyEff { get; set; }
@@ -118,26 +118,26 @@ namespace Gradware_OCR
             // AL: Automobile Liability
             //public string ALInsrLtr { get; set; }
             //public double ALInsrLtr_Confidence { get; set; }
-            //public string ALAnyAutoCheckbox { get; set; }
-            //public double ALAnyAutoCheckbox_Confidence { get; set; }
-            //public string ALAllOwnedAutosCheckbox { get; set; }
-            //public double ALAllOwnedAutosCheckbox_Confidence { get; set; }
-            //public string ALScheduledAutosCheckbox { get; set; }
-            //public double ALScheduledAutosCheckbox_Confidence { get; set; }
-            //public string ALHiredAutosCheckbox { get; set; }
-            //public double ALHiredAutosCheckbox_Confidence { get; set; }
-            //public string ALNonOwnedAutosCheckbox { get; set; }
-            //public double ALNonOwnedAutosCheckbox_Confidence { get; set; }
-            //public string ALAddlInsd { get; set; }
+            public bool ALAnyAutoCheckbox { get; set; }
+            public double ALAnyAutoCheckbox_Confidence { get; set; }
+            public bool ALAllOwnedAutosCheckbox { get; set; }
+            public double ALAllOwnedAutosCheckbox_Confidence { get; set; }
+            public bool ALScheduledAutosCheckbox { get; set; }
+            public double ALScheduledAutosCheckbox_Confidence { get; set; }
+            public bool ALHiredAutosCheckbox { get; set; }
+            public double ALHiredAutosCheckbox_Confidence { get; set; }
+            public bool ALNonOwnedAutosCheckbox { get; set; }
+            public double ALNonOwnedAutosCheckbox_Confidence { get; set; }
+            //public bool ALAddlInsd { get; set; }
             //public double ALAddlInsd_Confidence { get; set; }
-            //public string ALSubrWvd { get; set; }
+            //public bool ALSubrWvd { get; set; }
             //public double ALSubrWvd_Confidence { get; set; }
-            //public string ALPolicyNumber { get; set; }
-            //public double ALPolicyNumber_Confidence { get; set; }
-            //public string ALPolicyEff { get; set; }
-            //public double ALPolicyEff_Confidence { get; set; }
-            //public string ALPolicyExp { get; set; }
-            //public double ALPolicyExp_Confidence { get; set; }
+            public string ALPolicyNumber { get; set; }
+            public double ALPolicyNumber_Confidence { get; set; }
+            public string ALPolicyEff { get; set; }
+            public double ALPolicyEff_Confidence { get; set; }
+            public string ALPolicyExp { get; set; }
+            public double ALPolicyExp_Confidence { get; set; }
             public string ALCombinedSingleLimit { get; set; }
             public double ALCombinedSingleLimit_Confidence { get; set; }
             public string ALBodilyInjuryPerPerson { get; set; }
@@ -149,40 +149,63 @@ namespace Gradware_OCR
             // UEL: Umbrella or Excess Liability
             //public string UELInsrLtr { get; set; }
             //public double UELInsrLtr_Confidence { get; set; }
-            //public string UELUmbrellaLiabCheckbox { get; set; }
-            //public double UELUmbrellaLiabCheckbox_Confidence { get; set; }
-            //public string UELExcessLiabCheckbox { get; set; }
-            //public double UELExcessLiabCheckbox_Confidence { get; set; }
-            //public string UELOccurCheckbox { get; set; }
-            //public double UELOccurCheckbox_Confidence { get; set; }
-            //public string UELClaimsMadeCheckbox { get; set; }
-            //public double UELClaimsMadeCheckbox_Confidence { get; set; }
-            //public string UELDeductibleCheckbox { get; set; }
-            //public double UELDeductibleCheckbox_Confidence { get; set; }
-            //public string UELRetentionCheckbox { get; set; }
-            //public double UELRetentionCheckbox_Confidence { get; set; }
-            //public string UELRetentionText { get; set; }
-            //public double UELRetentionText_Confidence { get; set; }
-            //public string UELAddlInsd { get; set; }
+            public bool UELUmbrellaLiabCheckbox { get; set; }
+            public double UELUmbrellaLiabCheckbox_Confidence { get; set; }
+            public bool UELExcessLiabCheckbox { get; set; }
+            public double UELExcessLiabCheckbox_Confidence { get; set; }
+            public bool UELOccurCheckbox { get; set; }
+            public double UELOccurCheckbox_Confidence { get; set; }
+            public bool UELClaimsMadeCheckbox { get; set; }
+            public double UELClaimsMadeCheckbox_Confidence { get; set; }
+            public bool UELDeductibleCheckbox { get; set; }
+            public double UELDeductibleCheckbox_Confidence { get; set; }
+            public bool UELRetentionCheckbox { get; set; }
+            public double UELRetentionCheckbox_Confidence { get; set; }
+            public string UELRetentionText { get; set; }
+            public double UELRetentionText_Confidence { get; set; }
+            //public bool UELAddlInsd { get; set; }
             //public double UELAddlInsd_Confidence { get; set; }
-            //public string UELSubrWvd { get; set; }
+            //public bool UELSubrWvd { get; set; }
             //public double UELSubrWvd_Confidence { get; set; }
-            //public string UELPolicyNumber { get; set; }
-            //public double UELPolicyNumber_Confidence { get; set; }
-            //public string UELPolicyEff { get; set; }
-            //public double UELPolicyEff_Confidence { get; set; }
-            //public string UELPolicyExp { get; set; }
-            //public double UELPolicyExp_Confidence { get; set; }
-            //public string UELEachOccurence { get; set; }
-            //public double UELEachOccurence_Confidence { get; set; }
-            //public string UELAggregate { get; set; }
-            //public double UELAggregate_Confidence { get; set; }
-            //public string DescriptionOfOperations { get; set; }
-            //public double DescriptionOfOperations_Confidence { get; set; }
-            //public string CertificateHolder { get; set; }
-            //public double CertificateHolder_Confidence { get; set; }
-            //public string AuthorizedRepresentative { get; set; }
-            //public double AuthorizedRepresentative_Confidence { get; set; }
+            public string UELPolicyNumber { get; set; }
+            public double UELPolicyNumber_Confidence { get; set; }
+            public string UELPolicyEff { get; set; }
+            public double UELPolicyEff_Confidence { get; set; }
+            public string UELPolicyExp { get; set; }
+            public double UELPolicyExp_Confidence { get; set; }
+            public string UELEachOccurence { get; set; }
+            public double UELEachOccurence_Confidence { get; set; }
+            public string UELAggregate { get; set; }
+            public double UELAggregate_Confidence { get; set; }
+            // WCEL: Workers Compensation and Employers' Liability
+            //public bool WCELAnyMemberExcluded { get; set; }
+            //public double WCELAnyMemberExcluded_Confidence { get; set; }
+            //public bool WCELSubrWvd { get; set; }
+            //public double WCELSubrWvd_Confidence { get; set; }
+            public string WCELPolicyNumber { get; set; }
+            public double WCELPolicyNumber_Confidence { get; set; }
+            public string WCELPolicyEff { get; set; }
+            public double WCELPolicyEff_Confidence { get; set; }
+            public string WCELPolicyExp { get; set; }
+            public double WCELPolicyExp_Confidence { get; set; }
+            public bool WCELPerStatuteCheckbox { get; set; }
+            public double WCELPerStatuteCheckbox_Confidence { get; set; }
+            public bool WCELOtherLimitCheckbox { get; set; }
+            public double WCELOtherLimitCheckbox_Confidence { get; set; }
+            public string WCELPerStatuteOrOtherLimitText { get; set; }
+            public double WCELPerStatuteOrOtherLimitText_Confidence { get; set; }
+            public string WCELEachAccident { get; set; }
+            public double WCELEachAccident_Confidence { get; set; }
+            public string WCELDiseaseEachEmployee { get; set; }
+            public double WCELDiseaseEachEmployee_Confidence { get; set; }
+            public string WCELDiseasePolicyLimit { get; set; }
+            public double WCELDiseasePolicyLimit_Confidence { get; set; }
+            public string DescriptionOfOperations { get; set; }
+            public double DescriptionOfOperations_Confidence { get; set; }
+            public string CertificateHolder { get; set; }
+            public double CertificateHolder_Confidence { get; set; }
+            public string AuthorizedRepresentative { get; set; }
+            public double AuthorizedRepresentative_Confidence { get; set; }
         }
 
         internal class W9Doc
@@ -191,24 +214,24 @@ namespace Gradware_OCR
             public double Name_Confidence { get; set; }
             public string BusinessName { get; set; }
             public double BusinessName_Confidence { get; set; }
-            //public string ClassificationIndividual { get; set; }
-            //public double ClassificationIndividual_Confidence { get; set; }
-            //public string ClassificationCCorporation { get; set; }
-            //public double ClassificationCCorporation_Confidence { get; set; }
-            //public string ClassificationSCorporation { get; set; }
-            //public double ClassificationSCorporation_Confidence { get; set; }
-            //public string ClassificationPartnership { get; set; }
-            //public double ClassificationPartnership_Confidence { get; set; }
-            //public string ClassificationTrustEstate { get; set; }
-            //public double ClassificationTrustEstate_Confidence { get; set; }
-            //public string ClassificationLimitedLiability { get; set; }
-            //public double ClassificationLimitedLiability_Confidence { get; set; }
-            //public string ClassificationLimitedLiabilityCode { get; set; }
-            //public double ClassificationLimitedLiabilityCode_Confidence { get; set; }
-            //public string ClassificationOther { get; set; }
-            //public double ClassificationOther_Confidence { get; set; }
-            //public string ClassificationOtherText { get; set; }
-            //public double ClassificationOtherText_Confidence { get; set; }
+            public bool ClassificationIndividualCheckbox { get; set; }
+            public double ClassificationIndividualCheckbox_Confidence { get; set; }
+            public bool ClassificationCCorporationCheckbox { get; set; }
+            public double ClassificationCCorporationCheckbox_Confidence { get; set; }
+            public bool ClassificationSCorporationCheckbox { get; set; }
+            public double ClassificationSCorporationCheckbox_Confidence { get; set; }
+            public bool ClassificationPartnershipCheckbox { get; set; }
+            public double ClassificationPartnershipCheckbox_Confidence { get; set; }
+            public bool ClassificationTrustEstateCheckbox { get; set; }
+            public double ClassificationTrustEstateCheckbox_Confidence { get; set; }
+            public bool ClassificationLimitedLiabilityCheckbox { get; set; }
+            public double ClassificationLimitedLiabilityCheckbox_Confidence { get; set; }
+            public string ClassificationLimitedLiabilityCode { get; set; }
+            public double ClassificationLimitedLiabilityCode_Confidence { get; set; }
+            public bool ClassificationOtherCheckbox { get; set; }
+            public double ClassificationOtherCheckbox_Confidence { get; set; }
+            public string ClassificationOtherText { get; set; }
+            public double ClassificationOtherText_Confidence { get; set; }
             public string ExemptPayeeCode { get; set; }
             public double ExemptPayeeCode_Confidence { get; set; }
             public string ExemptionFromFATCACode { get; set; }
@@ -229,7 +252,9 @@ namespace Gradware_OCR
 
         protected void UploadButton_Click(object sender, EventArgs e)
 		{
-			string SelectedDocClass = DocumentClassDDL.SelectedValue;
+            IronOcr.License.LicenseKey = "IRONOCR-881455CC3C-338640-AD1406-5D3E070A56-74FA3CC-UExAEF09DFE54AE6D8-COMMUNITY.TRIAL.EXPIRES.06.JUN.2019";
+
+            string SelectedDocType = DocumentClassDDL.SelectedValue;
 
             string FileName = FileUpload.PostedFile.FileName;
             string FileType = Path.GetExtension(FileName);
@@ -241,8 +266,8 @@ namespace Gradware_OCR
                 FileUpload.PostedFile.SaveAs(FileLocation);
             }
 
-			// if doc classification unspecified (accepts any doc)
-			if (SelectedDocClass == "unspecified")
+			// if doc type unspecified (accepts any doc)
+			if (SelectedDocType == "unspecified")
 			{
 				if (FileUpload.HasFile)
 				{
@@ -315,8 +340,8 @@ namespace Gradware_OCR
 				}
 			}
 
-            // if doc classification is an ACORD 25 Form (typed)
-			else if (SelectedDocClass == "acord25")
+            // if doc type is an ACORD 25 Form (typed)
+			else if (SelectedDocType == "acord25")
 			{
                 if (FileUpload.HasFile)
                 {
@@ -439,22 +464,24 @@ namespace Gradware_OCR
                         var CertificateNumber_Area = new Rectangle(980, 900, 600, 50); // (x, y, width, height)
                         var CertificateNumber_Obj = Ocr.ReadPdf(FileLocation, CertificateNumber_Area);
                         var CertificateNumber = CertificateNumber_Obj.ToString();
-                        var CertificateNumber_Confidence = 0; //  Math.Round(CertificateNumber_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CertificateNumber_Confidence = Math.Round(CertificateNumber_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
                         var RevisionNumber_Area = new Rectangle(1900, 900, 500, 50); // (x, y, width, height)
                         var RevisionNumber_Obj = Ocr.ReadPdf(FileLocation, RevisionNumber_Area);
                         var RevisionNumber = RevisionNumber_Obj.ToString();
-                        var RevisionNumber_Confidence = 0; // Math.Round(RevisionNumber_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var RevisionNumber_Confidence = Math.Round(RevisionNumber_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        var CGLInsrLtr_Area = new Rectangle(50, 1119, 100, 340); // (x, y, width, height)
-                        var CGLInsrLtr_Obj = Ocr.ReadPdf(FileLocation, CGLInsrLtr_Area);
-                        var CGLInsrLtr = CGLInsrLtr_Obj.ToString();
-                        var CGLInsrLtr_Confidence = 0; // Math.Round(CGLInsrLtr_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        //var CGLInsrLtr_Area = new Rectangle(); // (x, y, width, height)
+                        //var CGLInsrLtr_Obj = Ocr.ReadPdf(FileLocation, CGLInsrLtr_Area);
+                        //var CGLInsrLtr = CGLInsrLtr_Obj.ToString();
+                        //var CGLInsrLtr_Confidence = Math.Round(CGLInsrLtr_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        var CGLCheckbox_Area = new Rectangle(145, 1119, 90, 70); // (x, y, width, height)
+                        var CGLCheckbox_Area = new Rectangle(135, 1117, 450, 50); // (x, y, width, height)
                         var CGLCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLCheckbox_Area);
-                        var CGLCheckbox = CGLCheckbox_Obj.ToString();
-                        var CGLCheckbox_Confidence = 0; // Math.Round(CGLCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CGLCheckbox_Value = CGLCheckbox_Obj.ToString().Replace("COMMERCIAL GENERAL LIABILITY", "");
+                        var CGLCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(CGLCheckbox_Value)) { CGLCheckbox = true; }
+                        var CGLCheckbox_Confidence = Math.Round(CGLCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
                         //var CGLBothClaimsOccurCheckbox_Area = new Rectangle(); // (x, y, width, height)
                         //var CGLBothClaimsOccurCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLBothClaimsOccurCheckbox_Area);
@@ -466,107 +493,113 @@ namespace Gradware_OCR
                         //var CGLClaimsMadeCheckbox = CGLClaimsMadeCheckbox_Obj.ToString();
                         //var CGLClaimsMadeCheckbox_Confidence = Math.Round(CGLClaimsMadeCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var CGLOccurCheckbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var CGLOccurCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLOccurCheckbox_Area);
-                        //var CGLOccurCheckbox = CGLOccurCheckbox_Obj.ToString();
-                        //var CGLOccurCheckbox_Confidence = Math.Round(CGLOccurCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CGLOccurCheckbox_Area = new Rectangle(412, 1160, 300, 50); // (x, y, width, height)
+                        var CGLOccurCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLOccurCheckbox_Area);
+                        var CGLOccurCheckbox_Value = CGLOccurCheckbox_Obj.ToString().Replace("OCCUR", "");
+                        var CGLOccurCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(CGLOccurCheckbox_Value)) { CGLOccurCheckbox = true; }
+                        var CGLOccurCheckbox_Confidence = Math.Round(CGLOccurCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var CGLOther1Checkbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var CGLOther1Checkbox_Obj = Ocr.ReadPdf(FileLocation, CGLOther1Checkbox_Area);
-                        //var CGLOther1Checkbox = CGLOther1Checkbox_Obj.ToString();
-                        //var CGLOther1Checkbox_Confidence = Math.Round(CGLOther1Checkbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CGLOther1Text_Area = new Rectangle(190, 1200, 490, 70); // (x, y, width, height)
+                        var CGLOther1Text_Obj = Ocr.ReadPdf(FileLocation, CGLOther1Text_Area);
+                        var CGLOther1Text = CGLOther1Text_Obj.ToString();
+                        var CGLOther1Text_Confidence = Math.Round(CGLOther1Text_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var CGLOther1Text_Area = new Rectangle(); // (x, y, width, height)
-                        //var CGLOther1Text_Obj = Ocr.ReadPdf(FileLocation, CGLOther1Text_Area);
-                        //var CGLOther1Text = CGLOther1Text_Obj.ToString();
-                        //var CGLOther1Text_Confidence = Math.Round(CGLOther1Text_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CGLOther1Checkbox = false;
+                        if (!String.IsNullOrWhiteSpace(CGLOther1Text)) { CGLOther1Checkbox = true; }
+                        var CGLOther1Checkbox_Confidence = CGLOther1Text_Confidence;
 
-                        //var CGLOther2Checkbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var CGLOther2Checkbox_Obj = Ocr.ReadPdf(FileLocation, CGLOther2Checkbox_Area);
-                        //var CGLOther2Checkbox = CGLOther2Checkbox_Obj.ToString();
-                        //var CGLOther2Checkbox_Confidence = Math.Round(CGLOther2Checkbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CGLOther2Text_Area = new Rectangle(195, 1250, 490, 70); // (x, y, width, height)
+                        var CGLOther2Text_Obj = Ocr.ReadPdf(FileLocation, CGLOther2Text_Area);
+                        var CGLOther2Text = CGLOther2Text_Obj.ToString();
+                        var CGLOther2Text_Confidence = Math.Round(CGLOther2Text_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var CGLOther2Text_Area = new Rectangle(); // (x, y, width, height)
-                        //var CGLOther2Text_Obj = Ocr.ReadPdf(FileLocation, CGLOther2Text_Area);
-                        //var CGLOther2Text = CGLOther2Text_Obj.ToString();
-                        //var CGLOther2Text_Confidence = Math.Round(CGLOther2Text_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CGLOther2Checkbox = false;
+                        if (!String.IsNullOrWhiteSpace(CGLOther2Text)) { CGLOther2Checkbox = true; }
+                        var CGLOther2Checkbox_Confidence = CGLOther1Text_Confidence;
 
-                        //var CGLLimitPolicyCheckbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var CGLLimitPolicyCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLLimitPolicyCheckbox_Area);
-                        //var CGLLimitPolicyCheckbox = CGLLimitPolicyCheckbox_Obj.ToString();
-                        //var CGLLimitPolicyCheckbox_Confidence = Math.Round(CGLLimitPolicyCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CGLLimitPolicyCheckbox_Area = new Rectangle(135, 1345, 150, 60); // (x, y, width, height)
+                        var CGLLimitPolicyCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLLimitPolicyCheckbox_Area);
+                        var CGLLimitPolicyCheckbox_Value = CGLLimitPolicyCheckbox_Obj.ToString().Replace("POLICY", "");
+                        var CGLLimitPolicyCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(CGLLimitPolicyCheckbox_Value)) { CGLLimitPolicyCheckbox = true; }
+                        var CGLLimitPolicyCheckbox_Confidence = Math.Round(CGLLimitPolicyCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var CGLLimitProjectCheckbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var CGLLimitProjectCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLLimitProjectCheckbox_Area);
-                        //var CGLLimitProjectCheckbox = CGLLimitProjectCheckbox_Obj.ToString();
-                        //var CGLLimitProjectCheckbox_Confidence = Math.Round(CGLLimitProjectCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CGLLimitProjectCheckbox_Area = new Rectangle(276, 1340, 150, 50); // (x, y, width, height)
+                        var CGLLimitProjectCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLLimitProjectCheckbox_Area);
+                        var CGLLimitProjectCheckbox_Value = CGLLimitProjectCheckbox_Obj.ToString().Replace("PRO-", "").Replace("f", "").Replace("JECT", "");
+                        var CGLLimitProjectCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(CGLLimitProjectCheckbox_Value)) { CGLLimitProjectCheckbox = true; }
+                        var CGLLimitProjectCheckbox_Confidence = Math.Round(CGLLimitProjectCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var CGLLimitLocCheckbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var CGLLimitLocCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLLimitLocCheckbox_Area);
-                        //var CGLLimitLocCheckbox = CGLLimitLocCheckbox_Obj.ToString();
-                        //var CGLLimitLocCheckbox_Confidence = Math.Round(CGLLimitLocCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CGLLimitLocCheckbox_Area = new Rectangle(); // (x, y, width, height)
+                        var CGLLimitLocCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLLimitLocCheckbox_Area);
+                        var CGLLimitLocCheckbox = CGLLimitLocCheckbox_Obj.ToString();
+                        var CGLLimitLocCheckbox_Confidence = Math.Round(CGLLimitLocCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var CGLLimitOtherCheckbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var CGLLimitOtherCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLLimitOtherCheckbox_Area);
-                        //var CGLLimitOtherCheckbox = CGLLimitOtherCheckbox_Obj.ToString();
-                        //var CGLLimitOtherCheckbox_Confidence = Math.Round(CGLLimitOtherCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CGLLimitOtherCheckbox_Area = new Rectangle(); // (x, y, width, height)
+                        var CGLLimitOtherCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLLimitOtherCheckbox_Area);
+                        var CGLLimitOtherCheckbox_Value = CGLLimitOtherCheckbox_Obj.ToString().Replace("OTHER:", "");
+                        var CGLLimitOtherCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(CGLLimitOtherCheckbox_Value)) { CGLLimitOtherCheckbox = true; }
+                        var CGLLimitOtherCheckbox_Confidence = Math.Round(CGLLimitOtherCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var CGLLimitOtherText_Area = new Rectangle(); // (x, y, width, height)
-                        //var CGLLimitOtherText_Obj = Ocr.ReadPdf(FileLocation, CGLLimitOtherText_Area);
-                        //var CGLLimitOtherText = CGLLimitOtherText_Obj.ToString();
-                        //var CGLLimitOtherText_Confidence = Math.Round(CGLLimitOtherText_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CGLLimitOtherText_Area = new Rectangle(295, 1385, 370, 55); // (x, y, width, height)
+                        var CGLLimitOtherText_Obj = Ocr.ReadPdf(FileLocation, CGLLimitOtherText_Area);
+                        var CGLLimitOtherText = CGLLimitOtherText_Obj.ToString();
+                        var CGLLimitOtherText_Confidence = Math.Round(CGLLimitOtherText_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        var CGLAddlInsd_Area = new Rectangle(595, 1119, 170, 340); // (x, y, width, height)
-                        var CGLAddlInsd_Obj = Ocr.ReadPdf(FileLocation, CGLAddlInsd_Area);
-                        var CGLAddlInsd = CGLAddlInsd_Obj.ToString();
-                        var CGLAddlInsd_Confidence = 0; // Math.Round(CGLAddlInsd_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        //var CGLAddlInsd_Area = new Rectangle(); // (x, y, width, height)
+                        //var CGLAddlInsd_Obj = Ocr.ReadPdf(FileLocation, CGLAddlInsd_Area);
+                        //var CGLAddlInsd = CGLAddlInsd_Obj.ToString();
+                        //var CGLAddlInsd_Confidence = Math.Round(CGLAddlInsd_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        var CGLSubrWvd_Area = new Rectangle(690, 1119, 170, 340); // (x, y, width, height)
-                        var CGLSubrWvd_Obj = Ocr.ReadPdf(FileLocation, CGLSubrWvd_Area);
-                        var CGLSubrWvd = CGLSubrWvd_Obj.ToString();
-                        var CGLSubrWvd_Confidence = 0; // Math.Round(CGLSubrWvd_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        //var CGLSubrWvd_Area = new Rectangle(); // (x, y, width, height)
+                        //var CGLSubrWvd_Obj = Ocr.ReadPdf(FileLocation, CGLSubrWvd_Area);
+                        //var CGLSubrWvd = CGLSubrWvd_Obj.ToString();
+                        //var CGLSubrWvd_Confidence = Math.Round(CGLSubrWvd_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
                         var CGLPolicyNumber_Area = new Rectangle(805, 1119, 425, 340); // (x, y, width, height)
                         var CGLPolicyNumber_Obj = Ocr.ReadPdf(FileLocation, CGLPolicyNumber_Area);
                         var CGLPolicyNumber = CGLPolicyNumber_Obj.ToString();
                         var CGLPolicyNumber_Confidence = Math.Round(CGLPolicyNumber_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        var CGLPolicyEff_Area = new Rectangle(1255, 1119, 200, 340); // (x, y, width, height)
+                        var CGLPolicyEff_Area = new Rectangle(1255, 1119, 180, 340); // (x, y, width, height)
                         var CGLPolicyEff_Obj = Ocr.ReadPdf(FileLocation, CGLPolicyEff_Area);
                         var CGLPolicyEff = CGLPolicyEff_Obj.ToString();
                         var CGLPolicyEff_Confidence = Math.Round(CGLPolicyEff_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        var CGLPolicyExp_Area = new Rectangle(1410, 1119, 200, 340); // (x, y, width, height)
+                        var CGLPolicyExp_Area = new Rectangle(1410, 1119, 180, 340); // (x, y, width, height)
                         var CGLPolicyExp_Obj = Ocr.ReadPdf(FileLocation, CGLPolicyExp_Area);
                         var CGLPolicyExp = CGLPolicyExp_Obj.ToString();
                         var CGLPolicyExp_Confidence = Math.Round(CGLPolicyExp_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        var CGLEachOccurence_Area = new Rectangle(1930, 1119, 350, 50); // (x, y, width, height)
+                        var CGLEachOccurence_Area = new Rectangle(1960, 1119, 320, 50); // (x, y, width, height)
                         var CGLEachOccurence_Obj = Ocr.ReadPdf(FileLocation, CGLEachOccurence_Area);
                         var CGLEachOccurence = CGLEachOccurence_Obj.ToString();
                         var CGLEachOccurence_Confidence = Math.Round(CGLEachOccurence_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        var CGLDamageToRentedPremises_Area = new Rectangle(1930, 1165, 350, 50); // (x, y, width, height)
+                        var CGLDamageToRentedPremises_Area = new Rectangle(1960, 1165, 320, 50); // (x, y, width, height)
                         var CGLDamageToRentedPremises_Obj = Ocr.ReadPdf(FileLocation, CGLDamageToRentedPremises_Area);
                         var CGLDamageToRentedPremises = CGLDamageToRentedPremises_Obj.ToString();
                         var CGLDamageToRentedPremises_Confidence = Math.Round(CGLDamageToRentedPremises_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        var CGLMedExp_Area = new Rectangle(1930, 1205, 350, 50); // (x, y, width, height)
+                        var CGLMedExp_Area = new Rectangle(1960, 1212, 260, 50); // (x, y, width, height)
                         var CGLMedExp_Obj = Ocr.ReadPdf(FileLocation, CGLMedExp_Area);
                         var CGLMedExp = CGLMedExp_Obj.ToString();
                         var CGLMedExp_Confidence = Math.Round(CGLMedExp_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        var CGLPersonalAndAdvInjury_Area = new Rectangle(1930, 1250, 350, 50); // (x, y, width, height)
+                        var CGLPersonalAndAdvInjury_Area = new Rectangle(1960, 1255, 260, 50); // (x, y, width, height)
                         var CGLPersonalAndAdvInjury_Obj = Ocr.ReadPdf(FileLocation, CGLPersonalAndAdvInjury_Area);
                         var CGLPersonalAndAdvInjury = CGLPersonalAndAdvInjury_Obj.ToString();
                         var CGLPersonalAndAdvInjury_Confidence = Math.Round(CGLPersonalAndAdvInjury_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        var CGLGeneralAggregate_Area = new Rectangle(1930, 1295, 350, 50); // (x, y, width, height)
+                        var CGLGeneralAggregate_Area = new Rectangle(1950, 1293, 350, 50); // (x, y, width, height)
                         var CGLGeneralAggregate_Obj = Ocr.ReadPdf(FileLocation, CGLGeneralAggregate_Area);
                         var CGLGeneralAggregate = CGLGeneralAggregate_Obj.ToString();
                         var CGLGeneralAggregate_Confidence = Math.Round(CGLGeneralAggregate_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        var CGLProductsCompOpAgg_Area = new Rectangle(1930, 1340, 350, 50); // (x, y, width, height)
+                        var CGLProductsCompOpAgg_Area = new Rectangle(1960, 1350, 265, 50); // (x, y, width, height)
                         var CGLProductsCompOpAgg_Obj = Ocr.ReadPdf(FileLocation, CGLProductsCompOpAgg_Area);
                         var CGLProductsCompOpAgg = CGLProductsCompOpAgg_Obj.ToString();
                         var CGLProductsCompOpAgg_Confidence = Math.Round(CGLProductsCompOpAgg_Obj.Pages[0].Paragraphs[0].Confidence, 2);
@@ -576,30 +609,40 @@ namespace Gradware_OCR
                         //var ALInsrLtr = ALInsrLtr_Obj.ToString();
                         //var ALInsrLtr_Confidence = Math.Round(ALInsrLtr_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var ALAnyAutoCheckbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var ALAnyAutoCheckbox_Obj = Ocr.ReadPdf(FileLocation, ALAnyAutoCheckbox_Area);
-                        //var ALAnyAutoCheckbox = ALAnyAutoCheckbox_Obj.ToString();
-                        //var ALAnyAutoCheckbox_Confidence = Math.Round(ALAnyAutoCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var ALAnyAutoCheckbox_Area = new Rectangle(135, 1485, 190, 50); // (x, y, width, height)
+                        var ALAnyAutoCheckbox_Obj = Ocr.ReadPdf(FileLocation, ALAnyAutoCheckbox_Area);
+                        var ALAnyAutoCheckbox_Value = ALAnyAutoCheckbox_Obj.ToString().Replace("OTHER:", "");
+                        var ALAnyAutoCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(ALAnyAutoCheckbox_Value)) { ALAnyAutoCheckbox = true; }
+                        var ALAnyAutoCheckbox_Confidence = Math.Round(ALAnyAutoCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var ALAllOwnedAutosCheckbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var ALAllOwnedAutosCheckbox_Obj = Ocr.ReadPdf(FileLocation, ALAllOwnedAutosCheckbox_Area);
-                        //var ALAllOwnedAutosCheckbox = ALAllOwnedAutosCheckbox_Obj.ToString();
-                        //var ALAllOwnedAutosCheckbox_Confidence = 0; // Math.Round(ALAllOwnedAutosCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var ALAllOwnedAutosCheckbox_Area = new Rectangle(131, 1528, 215, 55); // (x, y, width, height)
+                        var ALAllOwnedAutosCheckbox_Obj = Ocr.ReadPdf(FileLocation, ALAllOwnedAutosCheckbox_Area);
+                        var ALAllOwnedAutosCheckbox_Value = ALAllOwnedAutosCheckbox_Obj.ToString().Replace("ALL OWNED", "").Replace("AUTOS", "");
+                        var ALAllOwnedAutosCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(ALAllOwnedAutosCheckbox_Value)) { ALAllOwnedAutosCheckbox = true; }
+                        var ALAllOwnedAutosCheckbox_Confidence = Math.Round(ALAllOwnedAutosCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var ALScheduledAutosCheckbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var ALScheduledAutosCheckbox_Obj = Ocr.ReadPdf(FileLocation, ALScheduledAutosCheckbox_Area);
-                        //var ALScheduledAutosCheckbox = ALScheduledAutosCheckbox_Obj.ToString();
-                        //var ALScheduledAutosCheckbox_Confidence = Math.Round(ALScheduledAutosCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var ALScheduledAutosCheckbox_Area = new Rectangle(391, 1530, 220, 52); // (x, y, width, height)
+                        var ALScheduledAutosCheckbox_Obj = Ocr.ReadPdf(FileLocation, ALScheduledAutosCheckbox_Area);
+                        var ALScheduledAutosCheckbox_Value = ALScheduledAutosCheckbox_Obj.ToString().Replace("SCHEDULED", "").Replace("AUTOS", "");
+                        var ALScheduledAutosCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(ALScheduledAutosCheckbox_Value)) { ALScheduledAutosCheckbox = true; }
+                        var ALScheduledAutosCheckbox_Confidence = Math.Round(ALScheduledAutosCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var ALHiredAutosCheckbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var ALHiredAutosCheckbox_Obj = Ocr.ReadPdf(FileLocation, ALHiredAutosCheckbox_Area);
-                        //var ALHiredAutosCheckbox = ALHiredAutosCheckbox_Obj.ToString();
-                        //var ALHiredAutosCheckbox_Confidence = Math.Round(ALHiredAutosCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var ALHiredAutosCheckbox_Area = new Rectangle(135, 1575, 225, 50); // (x, y, width, height)
+                        var ALHiredAutosCheckbox_Obj = Ocr.ReadPdf(FileLocation, ALHiredAutosCheckbox_Area);
+                        var ALHiredAutosCheckbox_Value = ALHiredAutosCheckbox_Obj.ToString().Replace("HIRED AUTOS", "");
+                        var ALHiredAutosCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(ALHiredAutosCheckbox_Value)) { ALHiredAutosCheckbox = true; }
+                        var ALHiredAutosCheckbox_Confidence = Math.Round(ALHiredAutosCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var ALNonOwnedAutosCheckbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var ALNonOwnedAutosCheckbox_Obj = Ocr.ReadPdf(FileLocation, ALNonOwnedAutosCheckbox_Area);
-                        //var ALNonOwnedAutosCheckbox = ALNonOwnedAutosCheckbox_Obj.ToString();
-                        //var ALNonOwnedAutosCheckbox_Confidence = Math.Round(ALNonOwnedAutosCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var ALNonOwnedAutosCheckbox_Area = new Rectangle(395, 1573, 220, 50); // (x, y, width, height)
+                        var ALNonOwnedAutosCheckbox_Obj = Ocr.ReadPdf(FileLocation, ALNonOwnedAutosCheckbox_Area);
+                        var ALNonOwnedAutosCheckbox_Value = ALNonOwnedAutosCheckbox_Obj.ToString().Replace("NON-OWNED ", "").Replace("AUTOS", "");
+                        var ALNonOwnedAutosCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(ALNonOwnedAutosCheckbox_Value)) { ALNonOwnedAutosCheckbox = true; }
+                        var ALNonOwnedAutosCheckbox_Confidence = Math.Round(ALNonOwnedAutosCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
                         //var ALAddlInsd_Area = new Rectangle(); // (x, y, width, height)
                         //var ALAddlInsd_Obj = Ocr.ReadPdf(FileLocation, ALAddlInsd_Area);
@@ -611,37 +654,37 @@ namespace Gradware_OCR
                         //var ALSubrWvd = ALSubrWvd_Obj.ToString();
                         //var ALSubrWvd_Confidence = Math.Round(ALSubrWvd_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var ALPolicyNumber_Area = new Rectangle(); // (x, y, width, height)
-                        //var ALPolicyNumber_Obj = Ocr.ReadPdf(FileLocation, ALPolicyNumber_Area);
-                        //var ALPolicyNumber = ALPolicyNumber_Obj.ToString();
-                        //var ALPolicyNumber_Confidence = Math.Round(ALPolicyNumber_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var ALPolicyNumber_Area = new Rectangle(779, 1410, 438, 225); // (x, y, width, height)
+                        var ALPolicyNumber_Obj = Ocr.ReadPdf(FileLocation, ALPolicyNumber_Area);
+                        var ALPolicyNumber = ALPolicyNumber_Obj.ToString();
+                        var ALPolicyNumber_Confidence = Math.Round(ALPolicyNumber_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var ALPolicyEff_Area = new Rectangle(); // (x, y, width, height)
-                        //var ALPolicyEff_Obj = Ocr.ReadPdf(FileLocation, ALPolicyEff_Area);
-                        //var ALPolicyEff = ALPolicyEff_Obj.ToString();
-                        //var ALPolicyEff_Confidence = Math.Round(ALPolicyEff_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var ALPolicyEff_Area = new Rectangle(1217, 1410, 180, 225); // (x, y, width, height)
+                        var ALPolicyEff_Obj = Ocr.ReadPdf(FileLocation, ALPolicyEff_Area);
+                        var ALPolicyEff = ALPolicyEff_Obj.ToString();
+                        var ALPolicyEff_Confidence = Math.Round(ALPolicyEff_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var ALPolicyExp_Area = new Rectangle(); // (x, y, width, height)
-                        //var ALPolicyExp_Obj = Ocr.ReadPdf(FileLocation, ALPolicyExp_Area);
-                        //var ALPolicyExp = ALPolicyExp_Obj.ToString();
-                        //var ALPolicyExp_Confidence = Math.Round(ALPolicyExp_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var ALPolicyExp_Area = new Rectangle(1400, 1410, 180, 225); // (x, y, width, height)
+                        var ALPolicyExp_Obj = Ocr.ReadPdf(FileLocation, ALPolicyExp_Area);
+                        var ALPolicyExp = ALPolicyExp_Obj.ToString();
+                        var ALPolicyExp_Confidence = Math.Round(ALPolicyExp_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        var ALCombinedSingleLimit_Area = new Rectangle(1930, 1440, 350, 50); // (x, y, width, height)
+                        var ALCombinedSingleLimit_Area = new Rectangle(1965, 1445, 255, 40); // (x, y, width, height)
                         var ALCombinedSingleLimit_Obj = Ocr.ReadPdf(FileLocation, ALCombinedSingleLimit_Area);
                         var ALCombinedSingleLimit = ALCombinedSingleLimit_Obj.ToString();
                         var ALCombinedSingleLimit_Confidence = Math.Round(ALCombinedSingleLimit_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        var ALBodilyInjuryPerPerson_Area = new Rectangle(1930, 1485, 350, 50); // (x, y, width, height)
+                        var ALBodilyInjuryPerPerson_Area = new Rectangle(1965, 1485, 259, 47); // (x, y, width, height)
                         var ALBodilyInjuryPerPerson_Obj = Ocr.ReadPdf(FileLocation, ALBodilyInjuryPerPerson_Area);
                         var ALBodilyInjuryPerPerson = ALBodilyInjuryPerPerson_Obj.ToString();
                         var ALBodilyInjuryPerPerson_Confidence = 0; // Math.Round(ALBodilyInjuryPerPerson_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        var ALBodilyInjuryPerAccident_Area = new Rectangle(1930, 1540, 350, 50); // (x, y, width, height)
+                        var ALBodilyInjuryPerAccident_Area = new Rectangle(1965, 1535, 258, 45); // (x, y, width, height)
                         var ALBodilyInjuryPerAccident_Obj = Ocr.ReadPdf(FileLocation, ALBodilyInjuryPerAccident_Area);
                         var ALBodilyInjuryPerAccident = ALBodilyInjuryPerAccident_Obj.ToString();
                         var ALBodilyInjuryPerAccident_Confidence = 0; // Math.Round(ALBodilyInjuryPerAccident_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        var ALPropertyDamage_Area = new Rectangle(1930, 1585, 350, 50); // (x, y, width, height)
+                        var ALPropertyDamage_Area = new Rectangle(1965, 1575, 259, 50); // (x, y, width, height)
                         var ALPropertyDamage_Obj = Ocr.ReadPdf(FileLocation, ALPropertyDamage_Area);
                         var ALPropertyDamage = ALPropertyDamage_Obj.ToString();
                         var ALPropertyDamage_Confidence = Math.Round(ALPropertyDamage_Obj.Pages[0].Paragraphs[0].Confidence, 2);
@@ -651,40 +694,52 @@ namespace Gradware_OCR
                         //var UELInsrLtr = UELInsrLtr_Obj.ToString();
                         //var UELInsrLtr_Confidence = Math.Round(UELInsrLtr_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var UELUmbrellaLiabCheckbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var UELUmbrellaLiabCheckbox_Obj = Ocr.ReadPdf(FileLocation, UELUmbrellaLiabCheckbox_Area);
-                        //var UELUmbrellaLiabCheckbox = UELUmbrellaLiabCheckbox_Obj.ToString();
-                        //var UELUmbrellaLiabCheckbox_Confidence = Math.Round(UELUmbrellaLiabCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var UELUmbrellaLiabCheckbox_Area = new Rectangle(135, 1670, 265, 45); // (x, y, width, height)
+                        var UELUmbrellaLiabCheckbox_Obj = Ocr.ReadPdf(FileLocation, UELUmbrellaLiabCheckbox_Area);
+                        var UELUmbrellaLiabCheckbox_Value = UELUmbrellaLiabCheckbox_Obj.ToString().Replace("UMBRELLA LIAB", "");
+                        var UELUmbrellaLiabCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(UELUmbrellaLiabCheckbox_Value)) { UELUmbrellaLiabCheckbox = true; }
+                        var UELUmbrellaLiabCheckbox_Confidence = Math.Round(UELUmbrellaLiabCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var UELExcessLiabCheckbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var UELExcessLiabCheckbox_Obj = Ocr.ReadPdf(FileLocation, UELExcessLiabCheckbox_Area);
-                        //var UELExcessLiabCheckbox = UELExcessLiabCheckbox_Obj.ToString();
-                        //var UELExcessLiabCheckbox_Confidence = Math.Round(UELExcessLiabCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var UELExcessLiabCheckbox_Area = new Rectangle(135, 1715, 55, 45); // (x, y, width, height)
+                        var UELExcessLiabCheckbox_Obj = Ocr.ReadPdf(FileLocation, UELExcessLiabCheckbox_Area);
+                        var UELExcessLiabCheckbox_Value = UELExcessLiabCheckbox_Obj.ToString().Replace("EXCESS LIAB", "");
+                        var UELExcessLiabCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(UELExcessLiabCheckbox_Value)) { UELExcessLiabCheckbox = true; }
+                        var UELExcessLiabCheckbox_Confidence = Math.Round(UELExcessLiabCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var UELOccurCheckbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var UELOccurCheckbox_Obj = Ocr.ReadPdf(FileLocation, UELOccurCheckbox_Area);
-                        //var UELOccurCheckbox = UELOccurCheckbox_Obj.ToString();
-                        //var UELOccurCheckbox_Confidence = Math.Round(UELOccurCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var UELOccurCheckbox_Area = new Rectangle(435, 1670, 170, 45); // (x, y, width, height)
+                        var UELOccurCheckbox_Obj = Ocr.ReadPdf(FileLocation, UELOccurCheckbox_Area);
+                        var UELOccurCheckbox_Value = UELOccurCheckbox_Obj.ToString().Replace("OCCUR", "");
+                        var UELOccurCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(UELOccurCheckbox_Value)) { UELOccurCheckbox = true; }
+                        var UELOccurCheckbox_Confidence = Math.Round(UELOccurCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var UELClaimsMadeCheckbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var UELClaimsMadeCheckbox_Obj = Ocr.ReadPdf(FileLocation, UELClaimsMadeCheckbox_Area);
-                        //var UELClaimsMadeCheckbox = UELClaimsMadeCheckbox_Obj.ToString();
-                        //var UELClaimsMadeCheckbox_Confidence = Math.Round(UELClaimsMadeCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var UELClaimsMadeCheckbox_Area = new Rectangle(435, 1715, 230, 45); // (x, y, width, height)
+                        var UELClaimsMadeCheckbox_Obj = Ocr.ReadPdf(FileLocation, UELClaimsMadeCheckbox_Area);
+                        var UELClaimsMadeCheckbox_Value = UELClaimsMadeCheckbox_Obj.ToString().Replace("CLAIMS-MADE", "");
+                        var UELClaimsMadeCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(UELClaimsMadeCheckbox_Value)) { UELClaimsMadeCheckbox = true; }
+                        var UELClaimsMadeCheckbox_Confidence = Math.Round(UELClaimsMadeCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var UELDeductibleCheckbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var UELDeductibleCheckbox_Obj = Ocr.ReadPdf(FileLocation, UELDeductibleCheckbox_Area);
-                        //var UELDeductibleCheckbox = UELDeductibleCheckbox_Obj.ToString();
-                        //var UELDeductibleCheckbox_Confidence = Math.Round(UELDeductibleCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var UELDeductibleCheckbox_Area = new Rectangle(135, 1760, 135, 40); // (x, y, width, height)
+                        var UELDeductibleCheckbox_Obj = Ocr.ReadPdf(FileLocation, UELDeductibleCheckbox_Area);
+                        var UELDeductibleCheckbox_Value = UELDeductibleCheckbox_Obj.ToString().Replace("DED", "");
+                        var UELDeductibleCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(UELDeductibleCheckbox_Value)) { UELDeductibleCheckbox = true; }
+                        var UELDeductibleCheckbox_Confidence = Math.Round(UELDeductibleCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var UELRetentionCheckbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var UELRetentionCheckbox_Obj = Ocr.ReadPdf(FileLocation, UELRetentionCheckbox_Area);
-                        //var UELRetentionCheckbox = UELRetentionCheckbox_Obj.ToString();
-                        //var UELRetentionCheckbox_Confidence = Math.Round(UELRetentionCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var UELRetentionCheckbox_Area = new Rectangle(270, 1760, 200, 40); // (x, y, width, height)
+                        var UELRetentionCheckbox_Obj = Ocr.ReadPdf(FileLocation, UELRetentionCheckbox_Area);
+                        var UELRetentionCheckbox_Value = UELRetentionCheckbox_Obj.ToString().Replace("RETENTION", "");
+                        var UELRetentionCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(UELRetentionCheckbox_Value)) { UELRetentionCheckbox = true; }
+                        var UELRetentionCheckbox_Confidence = Math.Round(UELRetentionCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var UELRetentionText_Area = new Rectangle(); // (x, y, width, height)
-                        //var UELRetentionText_Obj = Ocr.ReadPdf(FileLocation, UELRetentionText_Area);
-                        //var UELRetentionText = UELRetentionText_Obj.ToString();
-                        //var UELRetentionText_Confidence = Math.Round(UELRetentionText_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var UELRetentionText_Area = new Rectangle(495, 1750, 165, 57); // (x, y, width, height)
+                        var UELRetentionText_Obj = Ocr.ReadPdf(FileLocation, UELRetentionText_Area);
+                        var UELRetentionText = UELRetentionText_Obj.ToString();
+                        var UELRetentionText_Confidence = Math.Round(UELRetentionText_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
                         //var UELAddlInsd_Area = new Rectangle(); // (x, y, width, height)
                         //var UELAddlInsd_Obj = Ocr.ReadPdf(FileLocation, UELAddlInsd_Area);
@@ -696,45 +751,102 @@ namespace Gradware_OCR
                         //var UELSubrWvd = UELSubrWvd_Obj.ToString();
                         //var UELSubrWvd_Confidence = Math.Round(UELSubrWvd_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var UELPolicyNumber_Area = new Rectangle(); // (x, y, width, height)
-                        //var UELPolicyNumber_Obj = Ocr.ReadPdf(FileLocation, UELPolicyNumber_Area);
-                        //var UELPolicyNumber = UELPolicyNumber_Obj.ToString();
-                        //var UELPolicyNumber_Confidence = Math.Round(UELPolicyNumber_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var UELPolicyNumber_Area = new Rectangle(795, 1670, 450, 1305); // (x, y, width, height)
+                        var UELPolicyNumber_Obj = Ocr.ReadPdf(FileLocation, UELPolicyNumber_Area);
+                        var UELPolicyNumber = UELPolicyNumber_Obj.ToString();
+                        var UELPolicyNumber_Confidence = Math.Round(UELPolicyNumber_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var UELPolicyEff_Area = new Rectangle(); // (x, y, width, height)
-                        //var UELPolicyEff_Obj = Ocr.ReadPdf(FileLocation, UELPolicyEff_Area);
-                        //var UELPolicyEff = UELPolicyEff_Obj.ToString();
-                        //var UELPolicyEff_Confidence = Math.Round(UELPolicyEff_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var UELPolicyEff_Area = new Rectangle(1240, 1670, 175, 135); // (x, y, width, height)
+                        var UELPolicyEff_Obj = Ocr.ReadPdf(FileLocation, UELPolicyEff_Area);
+                        var UELPolicyEff = UELPolicyEff_Obj.ToString();
+                        var UELPolicyEff_Confidence = Math.Round(UELPolicyEff_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var UELPolicyExp_Area = new Rectangle(); // (x, y, width, height)
-                        //var UELPolicyExp_Obj = Ocr.ReadPdf(FileLocation, UELPolicyExp_Area);
-                        //var UELPolicyExp = UELPolicyExp_Obj.ToString();
-                        //var UELPolicyExp_Confidence = Math.Round(UELPolicyExp_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var UELPolicyExp_Area = new Rectangle(1415, 1670, 180, 135); // (x, y, width, height)
+                        var UELPolicyExp_Obj = Ocr.ReadPdf(FileLocation, UELPolicyExp_Area);
+                        var UELPolicyExp = UELPolicyExp_Obj.ToString();
+                        var UELPolicyExp_Confidence = Math.Round(UELPolicyExp_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var UELEachOccurence_Area = new Rectangle(); // (x, y, width, height)
-                        //var UELEachOccurence_Obj = Ocr.ReadPdf(FileLocation, UELEachOccurence_Area);
-                        //var UELEachOccurence = UELEachOccurence_Obj.ToString();
-                        //var UELEachOccurence_Confidence = Math.Round(UELEachOccurence_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var UELEachOccurence_Area = new Rectangle(1965, 1670, 300, 50); // (x, y, width, height)
+                        var UELEachOccurence_Obj = Ocr.ReadPdf(FileLocation, UELEachOccurence_Area);
+                        var UELEachOccurence = UELEachOccurence_Obj.ToString();
+                        var UELEachOccurence_Confidence = Math.Round(UELEachOccurence_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var UELAggregate_Area = new Rectangle(); // (x, y, width, height)
-                        //var UELAggregate_Obj = Ocr.ReadPdf(FileLocation, UELAggregate_Area);
-                        //var UELAggregate = UELAggregate_Obj.ToString();
-                        //var UELAggregate_Confidence = Math.Round(UELAggregate_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var UELAggregate_Area = new Rectangle(1965, 1715, 230, 50); // (x, y, width, height)
+                        var UELAggregate_Obj = Ocr.ReadPdf(FileLocation, UELAggregate_Area);
+                        var UELAggregate = UELAggregate_Obj.ToString();
+                        var UELAggregate_Confidence = Math.Round(UELAggregate_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var DescriptionOfOperations_Area = new Rectangle(); // (x, y, width, height)
-                        //var DescriptionOfOperations_Obj = Ocr.ReadPdf(FileLocation, DescriptionOfOperations_Area);
-                        //var DescriptionOfOperations = DescriptionOfOperations_Obj.ToString();
-                        //var DescriptionOfOperations_Confidence = Math.Round(DescriptionOfOperations_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        // bool WCELAnyMemberExcluded if 'N', return false, if 'Y', return true
+                        // double WCELAnyMemberExcluded_Confidence
 
-                        //var CertificateHolder_Area = new Rectangle(); // (x, y, width, height)
-                        //var CertificateHolder_Obj = Ocr.ReadPdf(FileLocation, CertificateHolder_Area);
-                        //var CertificateHolder = CertificateHolder_Obj.ToString();
-                        //var CertificateHolder_Confidence = Math.Round(CertificateHolder_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        //var WCELSubrWvd_Area = new Rectangle(); // (x, y, width, height)
+                        //var WCELSubrWvd_Obj = Ocr.ReadPdf(FileLocation, WCELSubrWvd_Area);
+                        //var WCELSubrWvd = WCELSubrWvd_Obj.ToString();
+                        //var WCELSubrWvd_Confidence = Math.Round(WCELSubrWvd_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var AuthorizedRepresentative_Area = new Rectangle(); // (x, y, width, height)
-                        //var AuthorizedRepresentative_Obj = Ocr.ReadPdf(FileLocation, AuthorizedRepresentative_Area);
-                        //var AuthorizedRepresentative = AuthorizedRepresentative_Obj.ToString();
-                        //var AuthorizedRepresentative_Confidence = Math.Round(AuthorizedRepresentative_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var WCELPolicyNumber_Area = new Rectangle(800, 1805, 440, 175); // (x, y, width, height)
+                        var WCELPolicyNumber_Obj = Ocr.ReadPdf(FileLocation, WCELPolicyNumber_Area);
+                        var WCELPolicyNumber = WCELPolicyNumber_Obj.ToString();
+                        var WCELPolicyNumber_Confidence = Math.Round(WCELPolicyNumber_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+
+                        var WCELPolicyEff_Area = new Rectangle(1245, 1805, 170, 175); // (x, y, width, height)
+                        var WCELPolicyEff_Obj = Ocr.ReadPdf(FileLocation, WCELPolicyEff_Area);
+                        var WCELPolicyEff = WCELPolicyEff_Obj.ToString();
+                        var WCELPolicyEff_Confidence = Math.Round(WCELPolicyEff_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+
+                        var WCELPolicyExp_Area = new Rectangle(1415, 1805, 185, 175); // (x, y, width, height)
+                        var WCELPolicyExp_Obj = Ocr.ReadPdf(FileLocation, WCELPolicyExp_Area);
+                        var WCELPolicyExp = WCELPolicyExp_Obj.ToString();
+                        var WCELPolicyExp_Confidence = Math.Round(WCELPolicyExp_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+
+                        var WCELPerStatuteCheckbox_Area = new Rectangle(1595, 1800, 190, 45); // (x, y, width, height)
+                        var WCELPerStatuteCheckbox_Obj = Ocr.ReadPdf(FileLocation, WCELPerStatuteCheckbox_Area);
+                        var WCELPerStatuteCheckbox_Value = WCELPerStatuteCheckbox_Obj.ToString().Replace("PER", "").Replace("STATUTE", "");
+                        var WCELPerStatuteCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(WCELPerStatuteCheckbox_Value)) { WCELPerStatuteCheckbox = true; }
+                        var WCELPerStatuteCheckbox_Confidence = Math.Round(WCELPerStatuteCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+
+                        var WCELOtherLimitCheckbox_Area = new Rectangle(1780, 1800, 138, 43); // (x, y, width, height)
+                        var WCELOtherLimitCheckbox_Obj = Ocr.ReadPdf(FileLocation, WCELOtherLimitCheckbox_Area);
+                        var WCELOtherLimitCheckbox_Value = WCELOtherLimitCheckbox_Obj.ToString().Replace("OTH-", "").Replace("ER", "");
+                        var WCELOtherLimitCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(WCELOtherLimitCheckbox_Value)) { WCELOtherLimitCheckbox = true; }
+                        var WCELOtherLimitCheckbox_Confidence = Math.Round(WCELOtherLimitCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+
+                        var WCELPerStatuteOrOtherLimitText_Area = new Rectangle(1935, 1805, 285, 40); // (x, y, width, height)
+                        var WCELPerStatuteOrOtherLimitText_Obj = Ocr.ReadPdf(FileLocation, WCELPerStatuteOrOtherLimitText_Area);
+                        var WCELPerStatuteOrOtherLimitText = WCELPerStatuteOrOtherLimitText_Obj.ToString();
+                        var WCELPerStatuteOrOtherLimitText_Confidence = Math.Round(WCELPerStatuteOrOtherLimitText_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+
+                        var WCELEachAccident_Area = new Rectangle(1960, 1845, 255, 40); // (x, y, width, height)
+                        var WCELEachAccident_Obj = Ocr.ReadPdf(FileLocation, WCELEachAccident_Area);
+                        var WCELEachAccident = WCELEachAccident_Obj.ToString();
+                        var WCELEachAccident_Confidence = Math.Round(WCELEachAccident_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+
+                        var WCELDiseaseEachEmployee_Area = new Rectangle(1960, 1890, 255, 45); // (x, y, width, height)
+                        var WCELDiseaseEachEmployee_Obj = Ocr.ReadPdf(FileLocation, WCELDiseaseEachEmployee_Area);
+                        var WCELDiseaseEachEmployee = WCELDiseaseEachEmployee_Obj.ToString();
+                        var WCELDiseaseEachEmployee_Confidence = Math.Round(WCELDiseaseEachEmployee_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+
+                        var WCELDiseasePolicyLimit_Area = new Rectangle(1960, 1940, 255, 45); // (x, y, width, height)
+                        var WCELDiseasePolicyLimit_Obj = Ocr.ReadPdf(FileLocation, WCELDiseasePolicyLimit_Area);
+                        var WCELDiseasePolicyLimit = WCELDiseasePolicyLimit_Obj.ToString();
+                        var WCELDiseasePolicyLimit_Confidence = Math.Round(WCELDiseasePolicyLimit_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+
+                        var DescriptionOfOperations_Area = new Rectangle(70, 2155, 2155, 280); // (x, y, width, height)
+                        var DescriptionOfOperations_Obj = Ocr.ReadPdf(FileLocation, DescriptionOfOperations_Area);
+                        var DescriptionOfOperations = DescriptionOfOperations_Obj.ToString();
+                        var DescriptionOfOperations_Confidence = Math.Round(DescriptionOfOperations_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+
+                        var CertificateHolder_Area = new Rectangle(65, 2475, 1085, 315); // (x, y, width, height)
+                        var CertificateHolder_Obj = Ocr.ReadPdf(FileLocation, CertificateHolder_Area);
+                        var CertificateHolder = CertificateHolder_Obj.ToString();
+                        var CertificateHolder_Confidence = Math.Round(CertificateHolder_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+
+                        var AuthorizedRepresentative_Area = new Rectangle(1150, 2695, 1080, 95); // (x, y, width, height)
+                        var AuthorizedRepresentative_Obj = Ocr.ReadPdf(FileLocation, AuthorizedRepresentative_Area);
+                        var AuthorizedRepresentative = AuthorizedRepresentative_Obj.ToString();
+                        var AuthorizedRepresentative_Confidence = Math.Round(AuthorizedRepresentative_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
                         // add to list and serialize it into JSON
                         OutputList.Add(new AcordDoc() {
@@ -780,38 +892,38 @@ namespace Gradware_OCR
                             CertificateNumber_Confidence = CertificateNumber_Confidence,
                             RevisionNumber = RevisionNumber,
                             RevisionNumber_Confidence = RevisionNumber_Confidence,
-                            CGLInsrLtr = CGLInsrLtr,
-                            CGLInsrLtr_Confidence = CGLInsrLtr_Confidence,
+                            //CGLInsrLtr = CGLInsrLtr,
+                            //CGLInsrLtr_Confidence = CGLInsrLtr_Confidence,
                             CGLCheckbox = CGLCheckbox,
                             CGLCheckbox_Confidence = CGLCheckbox_Confidence,
                             //CGLBothClaimsOccurCheckbox = CGLBothClaimsOccurCheckbox,
                             //CGLBothClaimsOccurCheckbox_Confidence = CGLBothClaimsOccurCheckbox_Confidence,
                             //CGLClaimsMadeCheckbox = CGLClaimsMadeCheckbox,
                             //CGLClaimsMadeCheckbox_Confidence = CGLClaimsMadeCheckbox_Confidence,
-                            //CGLOccurCheckbox = CGLOccurCheckbox,
-                            //CGLOccurCheckbox_Confidence = CGLOccurCheckbox_Confidence,
-                            //CGLOther1Checkbox = CGLOther1Checkbox,
-                            //CGLOther1Checkbox_Confidence = CGLOther1Checkbox_Confidence,
-                            //CGLOther1Text = CGLOther1Text,
-                            //CGLOther1Text_Confidence = CGLOther1Text_Confidence,
-                            //CGLOther2Checkbox = CGLOther2Checkbox,
-                            //CGLOther2Checkbox_Confidence = CGLOther2Checkbox_Confidence,
-                            //CGLOther2Text = CGLOther2Text,
-                            //CGLOther2Text_Confidence = CGLOther2Text_Confidence,
-                            //CGLLimitPolicyCheckbox = CGLLimitPolicyCheckbox,
-                            //CGLLimitPolicyCheckbox_Confidence = CGLLimitPolicyCheckbox_Confidence,
-                            //CGLLimitProjectCheckbox = CGLLimitProjectCheckbox,
-                            //CGLLimitProjectCheckbox_Confidence = CGLLimitProjectCheckbox_Confidence,
+                            CGLOccurCheckbox = CGLOccurCheckbox,
+                            CGLOccurCheckbox_Confidence = CGLOccurCheckbox_Confidence,
+                            CGLOther1Checkbox = CGLOther1Checkbox,
+                            CGLOther1Checkbox_Confidence = CGLOther1Checkbox_Confidence,
+                            CGLOther1Text = CGLOther1Text,
+                            CGLOther1Text_Confidence = CGLOther1Text_Confidence,
+                            CGLOther2Checkbox = CGLOther2Checkbox,
+                            CGLOther2Checkbox_Confidence = CGLOther2Checkbox_Confidence,
+                            CGLOther2Text = CGLOther2Text,
+                            CGLOther2Text_Confidence = CGLOther2Text_Confidence,
+                            CGLLimitPolicyCheckbox = CGLLimitPolicyCheckbox,
+                            CGLLimitPolicyCheckbox_Confidence = CGLLimitPolicyCheckbox_Confidence,
+                            CGLLimitProjectCheckbox = CGLLimitProjectCheckbox,
+                            CGLLimitProjectCheckbox_Confidence = CGLLimitProjectCheckbox_Confidence,
                             //CGLLimitLocCheckbox = CGLLimitLocCheckbox,
                             //CGLLimitLocCheckbox_Confidence = CGLLimitLocCheckbox_Confidence,
-                            //CGLLimitOtherCheckbox = CGLLimitOtherCheckbox,
-                            //CGLLimitOtherCheckbox_Confidence = CGLLimitOtherCheckbox_Confidence,
-                            //CGLLimitOtherText = CGLLimitOtherText,
-                            //CGLLimitOtherText_Confidence = CGLLimitOtherText_Confidence,
-                            CGLAddlInsd = CGLAddlInsd,
-                            CGLAddlInsd_Confidence = CGLAddlInsd_Confidence,
-                            CGLSubrWvd = CGLSubrWvd,
-                            CGLSubrWvd_Confidence = CGLSubrWvd_Confidence,
+                            CGLLimitOtherCheckbox = CGLLimitOtherCheckbox,
+                            CGLLimitOtherCheckbox_Confidence = CGLLimitOtherCheckbox_Confidence,
+                            CGLLimitOtherText = CGLLimitOtherText,
+                            CGLLimitOtherText_Confidence = CGLLimitOtherText_Confidence,
+                            //CGLAddlInsd = CGLAddlInsd,
+                            //CGLAddlInsd_Confidence = CGLAddlInsd_Confidence,
+                            //CGLSubrWvd = CGLSubrWvd,
+                            //CGLSubrWvd_Confidence = CGLSubrWvd_Confidence,
                             CGLPolicyNumber = CGLPolicyNumber,
                             CGLPolicyNumber_Confidence = CGLPolicyNumber_Confidence,
                             CGLPolicyEff = CGLPolicyEff,
@@ -832,26 +944,26 @@ namespace Gradware_OCR
                             CGLProductsCompOpAgg_Confidence = CGLProductsCompOpAgg_Confidence,
                             //ALInsrLtr = ALInsrLtr,
                             //ALInsrLtr_Confidence = ALInsrLtr_Confidence,
-                            //ALAnyAutoCheckbox = ALAnyAutoCheckbox,
-                            //ALAnyAutoCheckbox_Confidence = ALAnyAutoCheckbox_Confidence,
-                            //ALAllOwnedAutosCheckbox = ALAllOwnedAutosCheckbox,
-                            //ALAllOwnedAutosCheckbox_Confidence = ALAllOwnedAutosCheckbox_Confidence,
-                            //ALScheduledAutosCheckbox = ALScheduledAutosCheckbox,
-                            //ALScheduledAutosCheckbox_Confidence = ALScheduledAutosCheckbox_Confidence,
-                            //ALHiredAutosCheckbox = ALHiredAutosCheckbox,
-                            //ALHiredAutosCheckbox_Confidence = ALHiredAutosCheckbox_Confidence,
-                            //ALNonOwnedAutosCheckbox = ALNonOwnedAutosCheckbox,
-                            //ALNonOwnedAutosCheckbox_Confidence = ALNonOwnedAutosCheckbox_Confidence,
+                            ALAnyAutoCheckbox = ALAnyAutoCheckbox,
+                            ALAnyAutoCheckbox_Confidence = ALAnyAutoCheckbox_Confidence,
+                            ALAllOwnedAutosCheckbox = ALAllOwnedAutosCheckbox,
+                            ALAllOwnedAutosCheckbox_Confidence = ALAllOwnedAutosCheckbox_Confidence,
+                            ALScheduledAutosCheckbox = ALScheduledAutosCheckbox,
+                            ALScheduledAutosCheckbox_Confidence = ALScheduledAutosCheckbox_Confidence,
+                            ALHiredAutosCheckbox = ALHiredAutosCheckbox,
+                            ALHiredAutosCheckbox_Confidence = ALHiredAutosCheckbox_Confidence,
+                            ALNonOwnedAutosCheckbox = ALNonOwnedAutosCheckbox,
+                            ALNonOwnedAutosCheckbox_Confidence = ALNonOwnedAutosCheckbox_Confidence,
                             //ALAddlInsd = ALAddlInsd,
                             //ALAddlInsd_Confidence = ALAddlInsd_Confidence,
                             //ALSubrWvd = ALSubrWvd,
                             //ALSubrWvd_Confidence = ALSubrWvd_Confidence,
-                            //ALPolicyNumber = ALPolicyNumber,
-                            //ALPolicyNumber_Confidence = ALPolicyNumber_Confidence,
-                            //ALPolicyEff = ALPolicyEff,
-                            //ALPolicyEff_Confidence = ALPolicyEff_Confidence,
-                            //ALPolicyExp = ALPolicyExp,
-                            //ALPolicyExp_Confidence = ALPolicyExp_Confidence,
+                            ALPolicyNumber = ALPolicyNumber,
+                            ALPolicyNumber_Confidence = ALPolicyNumber_Confidence,
+                            ALPolicyEff = ALPolicyEff,
+                            ALPolicyEff_Confidence = ALPolicyEff_Confidence,
+                            ALPolicyExp = ALPolicyExp,
+                            ALPolicyExp_Confidence = ALPolicyExp_Confidence,
                             ALCombinedSingleLimit = ALCombinedSingleLimit,
                             ALCombinedSingleLimit_Confidence = ALCombinedSingleLimit_Confidence,
                             ALBodilyInjuryPerPerson = ALBodilyInjuryPerPerson,
@@ -859,43 +971,65 @@ namespace Gradware_OCR
                             ALBodilyInjuryPerAccident = ALBodilyInjuryPerAccident,
                             ALBodilyInjuryPerAccident_Confidence = ALBodilyInjuryPerAccident_Confidence,
                             ALPropertyDamage = ALPropertyDamage,
-                            ALPropertyDamage_Confidence = ALPropertyDamage_Confidence
+                            ALPropertyDamage_Confidence = ALPropertyDamage_Confidence,
                             //UELInsrLtr = UELInsrLtr,
                             //UELInsrLtr_Confidence = UELInsrLtr_Confidence,
-                            //UELUmbrellaLiabCheckbox = UELUmbrellaLiabCheckbox,
-                            //UELUmbrellaLiabCheckbox_Confidence = UELUmbrellaLiabCheckbox_Confidence,
-                            //UELExcessLiabCheckbox = UELExcessLiabCheckbox,
-                            //UELExcessLiabCheckbox_Confidence = UELExcessLiabCheckbox_Confidence,
-                            //UELOccurCheckbox = UELOccurCheckbox,
-                            //UELOccurCheckbox_Confidence = UELOccurCheckbox_Confidence,
-                            //UELClaimsMadeCheckbox = UELClaimsMadeCheckbox,
-                            //UELClaimsMadeCheckbox_Confidence = UELClaimsMadeCheckbox_Confidence,
-                            //UELDeductibleCheckbox = UELDeductibleCheckbox,
-                            //UELDeductibleCheckbox_Confidence = UELDeductibleCheckbox_Confidence,
-                            //UELRetentionCheckbox = UELRetentionCheckbox,
-                            //UELRetentionCheckbox_Confidence = UELRetentionCheckbox_Confidence,
-                            //UELRetentionText = UELRetentionText,
-                            //UELRetentionText_Confidence = UELRetentionText_Confidence,
+                            UELUmbrellaLiabCheckbox = UELUmbrellaLiabCheckbox,
+                            UELUmbrellaLiabCheckbox_Confidence = UELUmbrellaLiabCheckbox_Confidence,
+                            UELExcessLiabCheckbox = UELExcessLiabCheckbox,
+                            UELExcessLiabCheckbox_Confidence = UELExcessLiabCheckbox_Confidence,
+                            UELOccurCheckbox = UELOccurCheckbox,
+                            UELOccurCheckbox_Confidence = UELOccurCheckbox_Confidence,
+                            UELClaimsMadeCheckbox = UELClaimsMadeCheckbox,
+                            UELClaimsMadeCheckbox_Confidence = UELClaimsMadeCheckbox_Confidence,
+                            UELDeductibleCheckbox = UELDeductibleCheckbox,
+                            UELDeductibleCheckbox_Confidence = UELDeductibleCheckbox_Confidence,
+                            UELRetentionCheckbox = UELRetentionCheckbox,
+                            UELRetentionCheckbox_Confidence = UELRetentionCheckbox_Confidence,
+                            UELRetentionText = UELRetentionText,
+                            UELRetentionText_Confidence = UELRetentionText_Confidence,
                             //UELAddlInsd = UELAddlInsd,
                             //UELAddlInsd_Confidence = UELAddlInsd_Confidence,
                             //UELSubrWvd = UELSubrWvd,
                             //UELSubrWvd_Confidence = UELSubrWvd_Confidence,
-                            //UELPolicyNumber = UELPolicyNumber,
-                            //UELPolicyNumber_Confidence = UELPolicyNumber_Confidence,
-                            //UELPolicyEff = UELPolicyEff,
-                            //UELPolicyEff_Confidence = UELPolicyEff_Confidence,
-                            //UELPolicyExp = UELPolicyExp,
-                            //UELPolicyExp_Confidence = UELPolicyExp_Confidence,
-                            //UELEachOccurence = UELEachOccurence,
-                            //UELEachOccurence_Confidence = UELEachOccurence_Confidence,
-                            //UELAggregate = UELAggregate,
-                            //UELAggregate_Confidence = UELAggregate_Confidence,
-                            //DescriptionOfOperations = DescriptionOfOperations,
-                            //DescriptionOfOperations_Confidence = DescriptionOfOperations_Confidence,
-                            //CertificateHolder = CertificateHolder,
-                            //CertificateHolder_Confidence = CertificateHolder_Confidence,
-                            //AuthorizedRepresentative = AuthorizedRepresentative,
-                            //AuthorizedRepresentative_Confidence = AuthorizedRepresentative_Confidence
+                            UELPolicyNumber = UELPolicyNumber,
+                            UELPolicyNumber_Confidence = UELPolicyNumber_Confidence,
+                            UELPolicyEff = UELPolicyEff,
+                            UELPolicyEff_Confidence = UELPolicyEff_Confidence,
+                            UELPolicyExp = UELPolicyExp,
+                            UELPolicyExp_Confidence = UELPolicyExp_Confidence,
+                            UELEachOccurence = UELEachOccurence,
+                            UELEachOccurence_Confidence = UELEachOccurence_Confidence,
+                            UELAggregate = UELAggregate,
+                            UELAggregate_Confidence = UELAggregate_Confidence,
+                            //WCELAnyMemberExcluded = WCELAnyMemberExcluded,
+                            //WCELAnyMemberExcluded_Confidence = WCELAnyMemberExcluded_Confidence,
+                            //WCELSubrWvd = WCELSubrWvd,
+                            //WCELSubrWvd_Confidence = WCELSubrWvd_Confidence,
+                            WCELPolicyNumber = WCELPolicyNumber,
+                            WCELPolicyNumber_Confidence = WCELPolicyNumber_Confidence,
+                            WCELPolicyEff = WCELPolicyEff,
+                            WCELPolicyEff_Confidence = WCELPolicyEff_Confidence,
+                            WCELPolicyExp = WCELPolicyExp,
+                            WCELPolicyExp_Confidence = WCELPolicyExp_Confidence,
+                            WCELPerStatuteCheckbox = WCELPerStatuteCheckbox,
+                            WCELPerStatuteCheckbox_Confidence = WCELPerStatuteCheckbox_Confidence,
+                            WCELOtherLimitCheckbox = WCELOtherLimitCheckbox,
+                            WCELOtherLimitCheckbox_Confidence = WCELOtherLimitCheckbox_Confidence,
+                            WCELPerStatuteOrOtherLimitText = WCELPerStatuteOrOtherLimitText,
+                            WCELPerStatuteOrOtherLimitText_Confidence = WCELPerStatuteOrOtherLimitText_Confidence,
+                            WCELEachAccident = WCELEachAccident,
+                            WCELEachAccident_Confidence = WCELEachAccident_Confidence,
+                            WCELDiseaseEachEmployee = WCELDiseaseEachEmployee,
+                            WCELDiseaseEachEmployee_Confidence = WCELDiseaseEachEmployee_Confidence,
+                            WCELDiseasePolicyLimit = WCELDiseasePolicyLimit,
+                            WCELDiseasePolicyLimit_Confidence = WCELDiseasePolicyLimit_Confidence,
+                            DescriptionOfOperations = DescriptionOfOperations,
+                            DescriptionOfOperations_Confidence = DescriptionOfOperations_Confidence,
+                            CertificateHolder = CertificateHolder,
+                            CertificateHolder_Confidence = CertificateHolder_Confidence,
+                            AuthorizedRepresentative = AuthorizedRepresentative,
+                            AuthorizedRepresentative_Confidence = AuthorizedRepresentative_Confidence
                         });
                         var serializer = new JavaScriptSerializer();
                         var serializedOutputList = serializer.Serialize(OutputList); // final product; export this to database or wherever
@@ -914,8 +1048,8 @@ namespace Gradware_OCR
                 }
             }
 
-            // if doc classification is a W9 Form (handwritten)
-            else if (SelectedDocClass == "w9")
+            // if doc type is a W9 Form (handwritten)
+            else if (SelectedDocType == "w9")
 			{
 				if (FileUpload.HasFile)
 				{
@@ -947,55 +1081,69 @@ namespace Gradware_OCR
                         var Name = Name_Obj.ToString();
                         var Name_Confidence = Math.Round(Name_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        var BusinessName_Area = new Rectangle(200, 436, 1950, 73); // (x, y, width, height)
+                        var BusinessName_Area = new Rectangle(200, 436, 1949, 73); // (x, y, width, height)
                         var BusinessName_Obj = Ocr.ReadPdf(FileLocation, BusinessName_Area, PageOne);
                         var BusinessName = BusinessName_Obj.ToString();
                         var BusinessName_Confidence = Math.Round(BusinessName_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var ClassificationIndividual_Area = new Rectangle(); // (x, y, width, height)
-                        //var ClassificationIndividual_Obj = Ocr.ReadPdf(FileLocation, ClassificationIndividual_Area, PageOne);
-                        //var ClassificationIndividual = ClassificationIndividual_Obj.ToString();
-                        //var ClassificationIndividual_Confidence = Math.Round(ClassificationIndividual_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var ClassificationIndividualCheckbox_Area = new Rectangle(251, 598, 159, 25); // (x, y, width, height)
+                        var ClassificationIndividualCheckbox_Obj = Ocr.ReadPdf(FileLocation, ClassificationIndividualCheckbox_Area, PageOne);
+                        var ClassificationIndividualCheckbox_Value = ClassificationIndividualCheckbox_Obj.ToString().Replace("l Individl ml", "");
+                        var ClassificationIndividualCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(ClassificationIndividualCheckbox_Value)) { ClassificationIndividualCheckbox = true; }
+                        var ClassificationIndividualCheckbox_Confidence = Math.Round(ClassificationIndividualCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var ClassificationCCorporation_Area = new Rectangle(); // (x, y, width, height)
-                        //var ClassificationCCorporation_Obj = Ocr.ReadPdf(FileLocation, ClassificationCCorporation_Area, PageOne);
-                        //var ClassificationCCorporation = ClassificationCCorporation_Obj.ToString();
-                        //var ClassificationCCorporation_Confidence = Math.Round(ClassificationCCorporation_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var ClassificationCCorporationCheckbox_Area = new Rectangle(679, 598, 132, 20); // (x, y, width, height)
+                        var ClassificationCCorporationCheckbox_Obj = Ocr.ReadPdf(FileLocation, ClassificationCCorporationCheckbox_Area, PageOne);
+                        var ClassificationCCorporationCheckbox_Value = ClassificationCCorporationCheckbox_Obj.ToString().Replace("I C. Corn,", "");
+                        var ClassificationCCorporationCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(ClassificationCCorporationCheckbox_Value)) { ClassificationCCorporationCheckbox = true; }
+                        var ClassificationCCorporationCheckbox_Confidence = Math.Round(ClassificationCCorporationCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var ClassificationSCorporation_Area = new Rectangle(); // (x, y, width, height)
-                        //var ClassificationSCorporation_Obj = Ocr.ReadPdf(FileLocation, ClassificationSCorporation_Area, PageOne);
-                        //var ClassificationSCorporation = ClassificationSCorporation_Obj.ToString();
-                        //var ClassificationSCorporation_Confidence = Math.Round(ClassificationSCorporation_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var ClassificationSCorporationCheckbox_Area = new Rectangle(949, 598, 132, 20); // (x, y, width, height)
+                        var ClassificationSCorporationCheckbox_Obj = Ocr.ReadPdf(FileLocation, ClassificationSCorporationCheckbox_Area, PageOne);
+                        var ClassificationSCorporationCheckbox_Value = ClassificationSCorporationCheckbox_Obj.ToString().Replace("I St Cnrnr", "");
+                        var ClassificationSCorporationCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(ClassificationSCorporationCheckbox_Value)) { ClassificationSCorporationCheckbox = true; }
+                        var ClassificationSCorporationCheckbox_Confidence = Math.Round(ClassificationSCorporationCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var ClassificationPartnership_Area = new Rectangle(); // (x, y, width, height)
-                        //var ClassificationPartnership_Obj = Ocr.ReadPdf(FileLocation, ClassificationPartnership_Area, PageOne);
-                        //var ClassificationPartnership = ClassificationPartnership_Obj.ToString();
-                        //var ClassificationPartnership_Confidence = Math.Round(ClassificationPartnership_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var ClassificationPartnershipCheckbox_Area = new Rectangle(1218, 598, 132, 20); // (x, y, width, height)
+                        var ClassificationPartnershipCheckbox_Obj = Ocr.ReadPdf(FileLocation, ClassificationPartnershipCheckbox_Area, PageOne);
+                        var ClassificationPartnershipCheckbox_Value = ClassificationPartnershipCheckbox_Obj.ToString().Replace("I p9nrtrvarr", "");
+                        var ClassificationPartnershipCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(ClassificationPartnershipCheckbox_Value)) { ClassificationPartnershipCheckbox = true; }
+                        var ClassificationPartnershipCheckbox_Confidence = Math.Round(ClassificationPartnershipCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var ClassificationTrustEstate_Area = new Rectangle(); // (x, y, width, height)
-                        //var ClassificationTrustEstate_Obj = Ocr.ReadPdf(FileLocation, ClassificationTrustEstate_Area, PageOne);
-                        //var ClassificationTrustEstate = ClassificationTrustEstate_Obj.ToString();
-                        //var ClassificationTrustEstate_Confidence = Math.Round(ClassificationTrustEstate_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var ClassificationTrustEstateCheckbox_Area = new Rectangle(1488, 598, 132, 20); // (x, y, width, height)
+                        var ClassificationTrustEstateCheckbox_Obj = Ocr.ReadPdf(FileLocation, ClassificationTrustEstateCheckbox_Area, PageOne);
+                        var ClassificationTrustEstateCheckbox_Value = ClassificationTrustEstateCheckbox_Obj.ToString().Replace("I Tn Ief/p:", "");
+                        var ClassificationTrustEstateCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(ClassificationTrustEstateCheckbox_Value)) { ClassificationTrustEstateCheckbox = true; }
+                        var ClassificationTrustEstateCheckbox_Confidence = Math.Round(ClassificationTrustEstateCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var ClassificationLimitedLiability_Area = new Rectangle(); // (x, y, width, height)
-                        //var ClassificationLimitedLiability_Obj = Ocr.ReadPdf(FileLocation, ClassificationLimitedLiability_Area, PageOne);
-                        //var ClassificationLimitedLiability = ClassificationLimitedLiability_Obj.ToString();
-                        //var ClassificationLimitedLiability_Confidence = Math.Round(ClassificationLimitedLiability_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var ClassificationLimitedLiabilityCheckbox_Area = new Rectangle(251, 688, 137, 20); // (x, y, width, height)
+                        var ClassificationLimitedLiabilityCheckbox_Obj = Ocr.ReadPdf(FileLocation, ClassificationLimitedLiabilityCheckbox_Area, PageOne);
+                        var ClassificationLimitedLiabilityCheckbox_Value = ClassificationLimitedLiabilityCheckbox_Obj.ToString().Replace("l I imifnri", "");
+                        var ClassificationLimitedLiabilityCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(ClassificationLimitedLiabilityCheckbox_Value)) { ClassificationLimitedLiabilityCheckbox = true; }
+                        var ClassificationLimitedLiabilityCheckbox_Confidence = Math.Round(ClassificationLimitedLiabilityCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var ClassificationLimitedLiabilityCode_Area = new Rectangle(); // (x, y, width, height)
-                        //var ClassificationLimitedLiabilityCode_Obj = Ocr.ReadPdf(FileLocation, ClassificationLimitedLiabilityCode_Area, PageOne);
-                        //var ClassificationLimitedLiabilityCode = ClassificationLimitedLiabilityCode_Obj.ToString();
-                        //var ClassificationLimitedLiabilityCode_Confidence = Math.Round(ClassificationLimitedLiabilityCode_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var ClassificationLimitedLiabilityCode_Area = new Rectangle(1340, 670, 330, 50); // (x, y, width, height)
+                        var ClassificationLimitedLiabilityCode_Obj = Ocr.ReadPdf(FileLocation, ClassificationLimitedLiabilityCode_Area, PageOne);
+                        var ClassificationLimitedLiabilityCode = ClassificationLimitedLiabilityCode_Obj.ToString().Replace("P=Partnership) _ ", "").Replace(" ", "");
+                        var ClassificationLimitedLiabilityCode_Confidence = Math.Round(ClassificationLimitedLiabilityCode_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var ClassificationOther_Area = new Rectangle(); // (x, y, width, height)
-                        //var ClassificationOther_Obj = Ocr.ReadPdf(FileLocation, ClassificationOther_Area, PageOne);
-                        //var ClassificationOther = ClassificationOther_Obj.ToString();
-                        //var ClassificationOther_Confidence = Math.Round(ClassificationOther_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var ClassificationOtherCheckbox_Area = new Rectangle(251, 688, 117, 20); // (x, y, width, height)
+                        var ClassificationOtherCheckbox_Obj = Ocr.ReadPdf(FileLocation, ClassificationOtherCheckbox_Area, PageOne);
+                        var ClassificationOtherCheckbox_Value = ClassificationOtherCheckbox_Obj.ToString().Replace("l I imih:", "");
+                        var ClassificationOtherCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(ClassificationOtherCheckbox_Value)) { ClassificationOtherCheckbox = true; }
+                        var ClassificationOtherCheckbox_Confidence = Math.Round(ClassificationOtherCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var ClassificationOtherText_Area = new Rectangle(); // (x, y, width, height)
-                        //var ClassificationOtherText_Obj = Ocr.ReadPdf(FileLocation, ClassificationOtherText_Area, PageOne);
-                        //var ClassificationOtherText = ClassificationOtherText_Obj.ToString();
-                        //var ClassificationOtherText_Confidence = Math.Round(ClassificationOtherText_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var ClassificationOtherText_Area = new Rectangle(602, 851, 1096, 40); // (x, y, width, height)
+                        var ClassificationOtherText_Obj = Ocr.ReadPdf(FileLocation, ClassificationOtherText_Area, PageOne);
+                        var ClassificationOtherText = ClassificationOtherText_Obj.ToString();
+                        var ClassificationOtherText_Confidence = Math.Round(ClassificationOtherText_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
                         var ExemptPayeeCode_Area = new Rectangle(2035, 626, 115, 73); // (x, y, width, height)
                         var ExemptPayeeCode_Obj = Ocr.ReadPdf(FileLocation, ExemptPayeeCode_Area, PageOne);
@@ -1007,35 +1155,35 @@ namespace Gradware_OCR
                         var ExemptionFromFATCACode = ExemptionFromFATCACode_Obj.ToString();
                         var ExemptionFromFATCACode_Confidence = Math.Round(ExemptionFromFATCACode_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var Address_Area = new Rectangle(); // (x, y, width, height)
-                        //var Address_Obj = Ocr.ReadPdf(FileLocation, Address_Area, PageOne);
-                        //var Address = Address_Obj.ToString();
-                        //var Address_Confidence = Math.Round(Address_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var Address_Area = new Rectangle(225, 932, 1228, 40); // (x, y, width, height)
+                        var Address_Obj = Ocr.ReadPdf(FileLocation, Address_Area, PageOne);
+                        var Address = Address_Obj.ToString();
+                        var Address_Confidence = Math.Round(Address_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var CityStateZip_Area = new Rectangle(); // (x, y, width, height)
-                        //var CityStateZip_Obj = Ocr.ReadPdf(FileLocation, CityStateZip_Area, PageOne);
-                        //var CityStateZip = CityStateZip_Obj.ToString();
-                        //var CityStateZip_Confidence = Math.Round(CityStateZip_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CityStateZip_Area = new Rectangle(225, 1025, 1228, 40); // (x, y, width, height)
+                        var CityStateZip_Obj = Ocr.ReadPdf(FileLocation, CityStateZip_Area, PageOne);
+                        var CityStateZip = CityStateZip_Obj.ToString();
+                        var CityStateZip_Confidence = Math.Round(CityStateZip_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var RequesterNameAddress_Area = new Rectangle(); // (x, y, width, height)
-                        //var RequesterNameAddress_Obj = Ocr.ReadPdf(FileLocation, RequesterNameAddress_Area, PageOne);
-                        //var RequesterNameAddress = RequesterNameAddress_Obj.ToString();
-                        //var RequesterNameAddress_Confidence = Math.Round(RequesterNameAddress_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var RequesterNameAddress_Area = new Rectangle(1470, 935, 683, 128); // (x, y, width, height)
+                        var RequesterNameAddress_Obj = Ocr.ReadPdf(FileLocation, RequesterNameAddress_Area, PageOne);
+                        var RequesterNameAddress = RequesterNameAddress_Obj.ToString();
+                        var RequesterNameAddress_Confidence = Math.Round(RequesterNameAddress_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var AccountNumbers_Area = new Rectangle(); // (x, y, width, height)
-                        //var AccountNumbers_Obj = Ocr.ReadPdf(FileLocation, AccountNumbers_Area, PageOne);
-                        //var AccountNumbers = AccountNumbers_Obj.ToString();
-                        //var AccountNumbers_Confidence = Math.Round(AccountNumbers_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var AccountNumbers_Area = new Rectangle(200, 1104, 1950, 73); // (x, y, width, height)
+                        var AccountNumbers_Obj = Ocr.ReadPdf(FileLocation, AccountNumbers_Area, PageOne);
+                        var AccountNumbers = AccountNumbers_Obj.ToString();
+                        var AccountNumbers_Confidence = Math.Round(AccountNumbers_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var SocialSecurity_Area = new Rectangle(); // (x, y, width, height)
-                        //var SocialSecurity_Obj = Ocr.ReadPdf(FileLocation, SocialSecurity_Area, PageOne);
-                        //var SocialSecurity = SocialSecurity_Obj.ToString();
-                        //var SocialSecurity_Confidence = Math.Round(SocialSecurity_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var SocialSecurity_Area = new Rectangle(1550, 1271, 600, 70); // (x, y, width, height)
+                        var SocialSecurity_Obj = Ocr.ReadPdf(FileLocation, SocialSecurity_Area, PageOne);
+                        var SocialSecurity = SocialSecurity_Obj.ToString().Replace("l", "").Replace("-", "").Replace(" ", "");
+                        var SocialSecurity_Confidence = Math.Round(SocialSecurity_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var EmployerIdentification_Area = new Rectangle(); // (x, y, width, height)
-                        //var EmployerIdentification_Obj = Ocr.ReadPdf(FileLocation, EmployerIdentification_Area, PageOne);
-                        //var EmployerIdentification = EmployerIdentification_Obj.ToString();
-                        //var EmployerIdentification_Confidence = Math.Round(EmployerIdentification_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var EmployerIdentification_Area = new Rectangle(1550, 1450, 601, 69); // (x, y, width, height)
+                        var EmployerIdentification_Obj = Ocr.ReadPdf(FileLocation, EmployerIdentification_Area, PageOne);
+                        var EmployerIdentification = EmployerIdentification_Obj.ToString().Replace("l", "").Replace("-", "").Replace(" ", "");
+                        var EmployerIdentification_Confidence = Math.Round(EmployerIdentification_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
                         // add to list and serialize it into JSON
                         OutputList.Add(new W9Doc() {
@@ -1043,40 +1191,40 @@ namespace Gradware_OCR
                             Name_Confidence = Name_Confidence,
                             BusinessName = BusinessName,
                             BusinessName_Confidence = BusinessName_Confidence,
-                            //ClassificationIndividual = ClassificationIndividual,
-                            //ClassificationIndividual_Confidence = ClassificationIndividual_Confidence,
-                            //ClassificationCCorporation = ClassificationCCorporation,
-                            //ClassificationCCorporation_Confidence = ClassificationCCorporation_Confidence,
-                            //ClassificationSCorporation = ClassificationSCorporation,
-                            //ClassificationSCorporation_Confidence = ClassificationSCorporation_Confidence,
-                            //ClassificationPartnership = ClassificationPartnership,
-                            //ClassificationPartnership_Confidence = ClassificationPartnership_Confidence,
-                            //ClassificationTrustEstate = ClassificationTrustEstate,
-                            //ClassificationTrustEstate_Confidence = ClassificationTrustEstate_Confidence,
-                            //ClassificationLimitedLiability = ClassificationLimitedLiability,
-                            //ClassificationLimitedLiability_Confidence = ClassificationLimitedLiability_Confidence,
-                            //ClassificationLimitedLiabilityCode = ClassificationLimitedLiabilityCode,
-                            //ClassificationLimitedLiabilityCode_Confidence = ClassificationLimitedLiabilityCode_Confidence,
-                            //ClassificationOther = ClassificationOther,
-                            //ClassificationOther_Confidence = ClassificationOther_Confidence,
-                            //ClassificationOtherText = ClassificationOtherText,
-                            //ClassificationOtherText_Confidence = ClassificationOtherText_Confidence,
+                            ClassificationIndividualCheckbox = ClassificationIndividualCheckbox,
+                            ClassificationIndividualCheckbox_Confidence = ClassificationIndividualCheckbox_Confidence,
+                            ClassificationCCorporationCheckbox = ClassificationCCorporationCheckbox,
+                            ClassificationCCorporationCheckbox_Confidence = ClassificationCCorporationCheckbox_Confidence,
+                            ClassificationSCorporationCheckbox = ClassificationSCorporationCheckbox,
+                            ClassificationSCorporationCheckbox_Confidence = ClassificationSCorporationCheckbox_Confidence,
+                            ClassificationPartnershipCheckbox = ClassificationPartnershipCheckbox,
+                            ClassificationPartnershipCheckbox_Confidence = ClassificationPartnershipCheckbox_Confidence,
+                            ClassificationTrustEstateCheckbox = ClassificationTrustEstateCheckbox,
+                            ClassificationTrustEstateCheckbox_Confidence = ClassificationTrustEstateCheckbox_Confidence,
+                            ClassificationLimitedLiabilityCheckbox = ClassificationLimitedLiabilityCheckbox,
+                            ClassificationLimitedLiabilityCheckbox_Confidence = ClassificationLimitedLiabilityCheckbox_Confidence,
+                            ClassificationLimitedLiabilityCode = ClassificationLimitedLiabilityCode,
+                            ClassificationLimitedLiabilityCode_Confidence = ClassificationLimitedLiabilityCode_Confidence,
+                            ClassificationOtherCheckbox = ClassificationOtherCheckbox,
+                            ClassificationOtherCheckbox_Confidence = ClassificationOtherCheckbox_Confidence,
+                            ClassificationOtherText = ClassificationOtherText,
+                            ClassificationOtherText_Confidence = ClassificationOtherText_Confidence,
                             ExemptPayeeCode = ExemptPayeeCode,
                             ExemptPayeeCode_Confidence = ExemptPayeeCode_Confidence,
                             ExemptionFromFATCACode = ExemptionFromFATCACode,
-                            ExemptionFromFATCACode_Confidence = ExemptionFromFATCACode_Confidence
-                            //Address = Address,
-                            //Address_Confidence = Address_Confidence,
-                            //CityStateZip = CityStateZip,
-                            //CityStateZip_Confidence = CityStateZip_Confidence,
-                            //RequesterNameAddress = RequesterNameAddress,
-                            //RequesterNameAddress_Confidence = RequesterNameAddress_Confidence,
-                            //AccountNumbers = AccountNumbers,
-                            //AccountNumbers_Confidence = AccountNumbers_Confidence,
-                            //SocialSecurity = SocialSecurity,
-                            //SocialSecurity_Confidence = SocialSecurity_Confidence,
-                            //EmployerIdentification = EmployerIdentification,
-                            //EmployerIdentification_Confidence = EmployerIdentification_Confidence
+                            ExemptionFromFATCACode_Confidence = ExemptionFromFATCACode_Confidence,
+                            Address = Address,
+                            Address_Confidence = Address_Confidence,
+                            CityStateZip = CityStateZip,
+                            CityStateZip_Confidence = CityStateZip_Confidence,
+                            RequesterNameAddress = RequesterNameAddress,
+                            RequesterNameAddress_Confidence = RequesterNameAddress_Confidence,
+                            AccountNumbers = AccountNumbers,
+                            AccountNumbers_Confidence = AccountNumbers_Confidence,
+                            SocialSecurity = SocialSecurity,
+                            SocialSecurity_Confidence = SocialSecurity_Confidence,
+                            EmployerIdentification = EmployerIdentification,
+                            EmployerIdentification_Confidence = EmployerIdentification_Confidence
                         });
                         var serializer = new JavaScriptSerializer();
                         var serializedOutputList = serializer.Serialize(OutputList); // final product; export this to database or wherever
