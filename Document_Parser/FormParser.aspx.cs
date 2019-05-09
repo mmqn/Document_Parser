@@ -677,12 +677,12 @@ namespace Gradware_OCR
                         var ALBodilyInjuryPerPerson_Area = new Rectangle(1965, 1485, 259, 47); // (x, y, width, height)
                         var ALBodilyInjuryPerPerson_Obj = Ocr.ReadPdf(FileLocation, ALBodilyInjuryPerPerson_Area);
                         var ALBodilyInjuryPerPerson = ALBodilyInjuryPerPerson_Obj.ToString();
-                        var ALBodilyInjuryPerPerson_Confidence = 0; // Math.Round(ALBodilyInjuryPerPerson_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var ALBodilyInjuryPerPerson_Confidence = Math.Round(ALBodilyInjuryPerPerson_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
                         var ALBodilyInjuryPerAccident_Area = new Rectangle(1965, 1535, 258, 45); // (x, y, width, height)
                         var ALBodilyInjuryPerAccident_Obj = Ocr.ReadPdf(FileLocation, ALBodilyInjuryPerAccident_Area);
                         var ALBodilyInjuryPerAccident = ALBodilyInjuryPerAccident_Obj.ToString();
-                        var ALBodilyInjuryPerAccident_Confidence = 0; // Math.Round(ALBodilyInjuryPerAccident_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var ALBodilyInjuryPerAccident_Confidence = Math.Round(ALBodilyInjuryPerAccident_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
                         var ALPropertyDamage_Area = new Rectangle(1965, 1575, 259, 50); // (x, y, width, height)
                         var ALPropertyDamage_Obj = Ocr.ReadPdf(FileLocation, ALPropertyDamage_Area);
@@ -701,7 +701,7 @@ namespace Gradware_OCR
                         if (!String.IsNullOrWhiteSpace(UELUmbrellaLiabCheckbox_Value)) { UELUmbrellaLiabCheckbox = true; }
                         var UELUmbrellaLiabCheckbox_Confidence = Math.Round(UELUmbrellaLiabCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        var UELExcessLiabCheckbox_Area = new Rectangle(135, 1715, 55, 45); // (x, y, width, height)
+                        var UELExcessLiabCheckbox_Area = new Rectangle(135, 1715, 230, 45); // (x, y, width, height)
                         var UELExcessLiabCheckbox_Obj = Ocr.ReadPdf(FileLocation, UELExcessLiabCheckbox_Area);
                         var UELExcessLiabCheckbox_Value = UELExcessLiabCheckbox_Obj.ToString().Replace("EXCESS LIAB", "");
                         var UELExcessLiabCheckbox = false;
