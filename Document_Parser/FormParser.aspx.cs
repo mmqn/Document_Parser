@@ -69,10 +69,10 @@ namespace Gradware_OCR
             //public double CGLInsrLtr_Confidence { get; set; }
             public bool CGLCheckbox { get; set; }
             public double CGLCheckbox_Confidence { get; set; }
-            //public bool CGLBothClaimsOccurCheckbox { get; set; }
-            //public double CGLBothClaimsOccurCheckbox_Confidence { get; set; }
-            //public bool CGLClaimsMadeCheckbox { get; set; }
-            //public double CGLClaimsMadeCheckbox_Confidence { get; set; }
+            public bool CGLBothClaimsOccurCheckbox { get; set; }
+            public double CGLBothClaimsOccurCheckbox_Confidence { get; set; }
+            public bool CGLClaimsMadeCheckbox { get; set; }
+            public double CGLClaimsMadeCheckbox_Confidence { get; set; }
             public bool CGLOccurCheckbox { get; set; }
             public double CGLOccurCheckbox_Confidence { get; set; }
             public bool CGLOther1Checkbox { get; set; }
@@ -87,8 +87,8 @@ namespace Gradware_OCR
             public double CGLLimitPolicyCheckbox_Confidence { get; set; }
             public bool CGLLimitProjectCheckbox { get; set; }
             public double CGLLimitProjectCheckbox_Confidence { get; set; }
-            //public bool CGLLimitLocCheckbox { get; set; }
-            //public double CGLLimitLocCheckbox_Confidence { get; set; }
+            public bool CGLLimitLocCheckbox { get; set; }
+            public double CGLLimitLocCheckbox_Confidence { get; set; }
             public bool CGLLimitOtherCheckbox { get; set; }
             public double CGLLimitOtherCheckbox_Confidence { get; set; }
             public string CGLLimitOtherText { get; set; }
@@ -483,15 +483,12 @@ namespace Gradware_OCR
                         if (!String.IsNullOrWhiteSpace(CGLCheckbox_Value)) { CGLCheckbox = true; }
                         var CGLCheckbox_Confidence = Math.Round(CGLCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        //var CGLBothClaimsOccurCheckbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var CGLBothClaimsOccurCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLBothClaimsOccurCheckbox_Area);
-                        //var CGLBothClaimsOccurCheckbox = CGLBothClaimsOccurCheckbox_Obj.ToString();
-                        //var CGLBothClaimsOccurCheckbox_Confidence = Math.Round(CGLBothClaimsOccurCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
-
-                        //var CGLClaimsMadeCheckbox_Area = new Rectangle(); // (x, y, width, height)
-                        //var CGLClaimsMadeCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLClaimsMadeCheckbox_Area);
-                        //var CGLClaimsMadeCheckbox = CGLClaimsMadeCheckbox_Obj.ToString();
-                        //var CGLClaimsMadeCheckbox_Confidence = Math.Round(CGLClaimsMadeCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+                        var CGLClaimsMadeCheckbox_Area = new Rectangle(167, 1173, 175, 44); // (x, y, width, height)
+                        var CGLClaimsMadeCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLClaimsMadeCheckbox_Area);
+                        var CGLClaimsMadeCheckbox_Value = CGLClaimsMadeCheckbox_Obj.ToString().Replace("CLAIMS", "");
+                        var CGLClaimsMadeCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(CGLClaimsMadeCheckbox_Value)) { CGLClaimsMadeCheckbox = true; }
+                        var CGLClaimsMadeCheckbox_Confidence = Math.Round(CGLClaimsMadeCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
                         var CGLOccurCheckbox_Area = new Rectangle(412, 1160, 300, 50); // (x, y, width, height)
                         var CGLOccurCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLOccurCheckbox_Area);
@@ -499,6 +496,10 @@ namespace Gradware_OCR
                         var CGLOccurCheckbox = false;
                         if (!String.IsNullOrWhiteSpace(CGLOccurCheckbox_Value)) { CGLOccurCheckbox = true; }
                         var CGLOccurCheckbox_Confidence = Math.Round(CGLOccurCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+
+                        var CGLBothClaimsOccurCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(CGLClaimsMadeCheckbox_Value) || !String.IsNullOrWhiteSpace(CGLOccurCheckbox_Value)) { CGLBothClaimsOccurCheckbox = true; }
+                        var CGLBothClaimsOccurCheckbox_Confidence = CGLClaimsMadeCheckbox_Confidence;
 
                         var CGLOther1Text_Area = new Rectangle(190, 1200, 490, 70); // (x, y, width, height)
                         var CGLOther1Text_Obj = Ocr.ReadPdf(FileLocation, CGLOther1Text_Area);
@@ -516,7 +517,7 @@ namespace Gradware_OCR
 
                         var CGLOther2Checkbox = false;
                         if (!String.IsNullOrWhiteSpace(CGLOther2Text)) { CGLOther2Checkbox = true; }
-                        var CGLOther2Checkbox_Confidence = CGLOther1Text_Confidence;
+                        var CGLOther2Checkbox_Confidence = CGLOther2Text_Confidence;
 
                         var CGLLimitPolicyCheckbox_Area = new Rectangle(135, 1345, 150, 60); // (x, y, width, height)
                         var CGLLimitPolicyCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLLimitPolicyCheckbox_Area);
@@ -532,22 +533,21 @@ namespace Gradware_OCR
                         if (!String.IsNullOrWhiteSpace(CGLLimitProjectCheckbox_Value)) { CGLLimitProjectCheckbox = true; }
                         var CGLLimitProjectCheckbox_Confidence = Math.Round(CGLLimitProjectCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
-                        var CGLLimitLocCheckbox_Area = new Rectangle(); // (x, y, width, height)
+                        var CGLLimitLocCheckbox_Area = new Rectangle(457, 1340, 200, 50); // (x, y, width, height)
                         var CGLLimitLocCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLLimitLocCheckbox_Area);
-                        var CGLLimitLocCheckbox = CGLLimitLocCheckbox_Obj.ToString();
+                        var CGLLimitLocCheckbox_Value = CGLLimitLocCheckbox_Obj.ToString().Replace("LOC", "");
+                        var CGLLimitLocCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(CGLLimitLocCheckbox_Value)) { CGLLimitLocCheckbox = true; }
                         var CGLLimitLocCheckbox_Confidence = Math.Round(CGLLimitLocCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
-
-                        var CGLLimitOtherCheckbox_Area = new Rectangle(); // (x, y, width, height)
-                        var CGLLimitOtherCheckbox_Obj = Ocr.ReadPdf(FileLocation, CGLLimitOtherCheckbox_Area);
-                        var CGLLimitOtherCheckbox_Value = CGLLimitOtherCheckbox_Obj.ToString().Replace("OTHER:", "");
-                        var CGLLimitOtherCheckbox = false;
-                        if (!String.IsNullOrWhiteSpace(CGLLimitOtherCheckbox_Value)) { CGLLimitOtherCheckbox = true; }
-                        var CGLLimitOtherCheckbox_Confidence = Math.Round(CGLLimitOtherCheckbox_Obj.Pages[0].Paragraphs[0].Confidence, 2);
 
                         var CGLLimitOtherText_Area = new Rectangle(295, 1385, 370, 55); // (x, y, width, height)
                         var CGLLimitOtherText_Obj = Ocr.ReadPdf(FileLocation, CGLLimitOtherText_Area);
                         var CGLLimitOtherText = CGLLimitOtherText_Obj.ToString();
                         var CGLLimitOtherText_Confidence = Math.Round(CGLLimitOtherText_Obj.Pages[0].Paragraphs[0].Confidence, 2);
+
+                        var CGLLimitOtherCheckbox = false;
+                        if (!String.IsNullOrWhiteSpace(CGLLimitOtherText)) { CGLLimitOtherCheckbox = true; }
+                        var CGLLimitOtherCheckbox_Confidence = CGLLimitOtherText_Confidence;
 
                         //var CGLAddlInsd_Area = new Rectangle(); // (x, y, width, height)
                         //var CGLAddlInsd_Obj = Ocr.ReadPdf(FileLocation, CGLAddlInsd_Area);
@@ -896,10 +896,10 @@ namespace Gradware_OCR
                             //CGLInsrLtr_Confidence = CGLInsrLtr_Confidence,
                             CGLCheckbox = CGLCheckbox,
                             CGLCheckbox_Confidence = CGLCheckbox_Confidence,
-                            //CGLBothClaimsOccurCheckbox = CGLBothClaimsOccurCheckbox,
-                            //CGLBothClaimsOccurCheckbox_Confidence = CGLBothClaimsOccurCheckbox_Confidence,
-                            //CGLClaimsMadeCheckbox = CGLClaimsMadeCheckbox,
-                            //CGLClaimsMadeCheckbox_Confidence = CGLClaimsMadeCheckbox_Confidence,
+                            CGLBothClaimsOccurCheckbox = CGLBothClaimsOccurCheckbox,
+                            CGLBothClaimsOccurCheckbox_Confidence = CGLBothClaimsOccurCheckbox_Confidence,
+                            CGLClaimsMadeCheckbox = CGLClaimsMadeCheckbox,
+                            CGLClaimsMadeCheckbox_Confidence = CGLClaimsMadeCheckbox_Confidence,
                             CGLOccurCheckbox = CGLOccurCheckbox,
                             CGLOccurCheckbox_Confidence = CGLOccurCheckbox_Confidence,
                             CGLOther1Checkbox = CGLOther1Checkbox,
@@ -914,8 +914,8 @@ namespace Gradware_OCR
                             CGLLimitPolicyCheckbox_Confidence = CGLLimitPolicyCheckbox_Confidence,
                             CGLLimitProjectCheckbox = CGLLimitProjectCheckbox,
                             CGLLimitProjectCheckbox_Confidence = CGLLimitProjectCheckbox_Confidence,
-                            //CGLLimitLocCheckbox = CGLLimitLocCheckbox,
-                            //CGLLimitLocCheckbox_Confidence = CGLLimitLocCheckbox_Confidence,
+                            CGLLimitLocCheckbox = CGLLimitLocCheckbox,
+                            CGLLimitLocCheckbox_Confidence = CGLLimitLocCheckbox_Confidence,
                             CGLLimitOtherCheckbox = CGLLimitOtherCheckbox,
                             CGLLimitOtherCheckbox_Confidence = CGLLimitOtherCheckbox_Confidence,
                             CGLLimitOtherText = CGLLimitOtherText,
