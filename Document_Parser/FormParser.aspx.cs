@@ -298,7 +298,7 @@ namespace Gradware_OCR
 						var serializedOutputList = serializer.Serialize(OutputList);
 
                         // place JSON object in text area HTML element
-                        ResultTextArea.Text = serializedOutputList;
+                        ResultDiv.InnerHtml = serializedOutputList;
 					}
 					else if (FileType == ".png" || FileType == ".jpg" || FileType == ".jpeg")
 					{
@@ -327,16 +327,16 @@ namespace Gradware_OCR
                         var serializedOutputList = serializer.Serialize(OutputList); // final product; export this to database or wherever
 
                         // place JSON object in text area HTML element
-                        ResultTextArea.Text = serializedOutputList;
+                        ResultDiv.InnerHtml = serializedOutputList;
                     }
                     else
                     {
-                        ResultTextArea.Text = "File type is not valid.";
+                        ResultDiv.InnerHtml = "File type is not valid.";
                     }
 				}
 				else
 				{
-                    ResultTextArea.Text = "No file found.";
+                    ResultDiv.InnerHtml = "No file found.";
 				}
 			}
 
@@ -1035,7 +1035,7 @@ namespace Gradware_OCR
                         var serializedOutputList = serializer.Serialize(OutputList); // final product; export this to database or wherever
 
                         // place JSON object in text area HTML element
-                        ResultTextArea.Text = serializedOutputList;
+                        ResultDiv.InnerHtml = serializedOutputList;
                     }
                     else if (FileType == ".png" || FileType == ".jpg" || FileType == ".jpeg")
                     {
@@ -1044,7 +1044,7 @@ namespace Gradware_OCR
                 }
                 else
                 {
-                    ResultTextArea.Text = "No file found.";
+                    ResultDiv.InnerHtml = "No file found.";
                 }
             }
 
@@ -1230,7 +1230,7 @@ namespace Gradware_OCR
                         var serializedOutputList = serializer.Serialize(OutputList); // final product; export this to database or wherever
 
                         // place JSON object in text area HTML element
-                        ResultTextArea.Text = serializedOutputList;
+                        ResultDiv.InnerHtml = serializedOutputList;
                     }
                     else if (FileType == ".png" || FileType == ".jpg" || FileType == ".jpeg")
                     {
@@ -1239,7 +1239,7 @@ namespace Gradware_OCR
                 }
 				else
 				{
-                    ResultTextArea.Text = "No file found.";
+                    ResultDiv.InnerHtml = "No file found.";
 				}
 			}
 		}
