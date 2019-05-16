@@ -45,7 +45,7 @@
 			<br />
 
             <div id="ResultDiv" runat="server" style="
-                width: 25vw;
+                width: 32vw;
                 height: 62vh;
                 margin: auto;
                 padding: 20px;
